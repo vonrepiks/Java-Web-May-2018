@@ -15,8 +15,8 @@ public class ConnectionHandler extends Thread {
     private OutputStream clientOutputStream;
 
     public ConnectionHandler(Socket clientSocket, RequestHandler requestHandler) {
-        this.requestHandler = requestHandler;
         this.initializeConnection(clientSocket);
+        this.requestHandler = requestHandler;
     }
 
     @Override

@@ -1,5 +1,7 @@
 package javache.http;
 
+import javache.constants.WebConstants;
+
 import java.util.*;
 
 public class HttpRequestImpl implements HttpRequest {
@@ -67,7 +69,7 @@ public class HttpRequestImpl implements HttpRequest {
         String[] remainLines = Arrays.stream(lines).skip(1).toArray(String[]::new);
 
         for (int i = 0; i < remainLines.length; i++) {
-            if ("".equals(remainLines[i].trim())) {
+            if (WebConstants.EMPTY_STRING.equals(remainLines[i].trim())) {
                 if (i + 1 < remainLines.length) {
                     this.parseBodyParameters(remainLines[i + 1]);
                 }

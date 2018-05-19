@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HttpResponseImpl implements HttpResponse {
-    private static final Map<Integer, String> RESPONSE_LINE = new HashMap<Integer, String>(){{
+    private static final Map<Integer, String> RESPONSE_LINE = new HashMap<>() {{
         put(200, "200 OK");
         put(404, "404 Not Found");
     }};

@@ -18,9 +18,9 @@ public class Server {
     private int port;
     private int timeouts;
 
-    public Server(int port) {
+    Server(int port) {
         this.port = port;
-        this.timeouts = 0;
+        this.timeouts = 1;
     }
 
     public void run() throws IOException {
@@ -37,7 +37,7 @@ public class Server {
                 FutureTask<?> task = new FutureTask<>(connectionHandler, null);
                 task.run();
             } catch (SocketTimeoutException stoe) {
-                System.out.println(TIMEOUT_DETECTION_MESSAGE);
+                System.out.println(String.format("%s. %s", this.timeouts, TIMEOUT_DETECTION_MESSAGE));
                 this.timeouts++;
             }
         }

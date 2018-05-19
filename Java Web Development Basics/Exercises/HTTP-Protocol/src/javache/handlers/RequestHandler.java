@@ -1,5 +1,6 @@
 package javache.handlers;
 
+import javache.constants.WebConstants;
 import javache.http.HttpRequest;
 import javache.http.HttpRequestImpl;
 import javache.http.HttpResponse;
@@ -12,10 +13,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RequestHandler {
-    private static final String PAGES_PATH = "/home/vonrepiks/Java/Java Web/Java Web Development Basics/Exercises/HTTP-Protocol/src/resources/pages/";
-    private static final String ASSETS_PATH = "/home/vonrepiks/Java/Java Web/Java Web Development Basics/Exercises/HTTP-Protocol/src/resources/assets/";
+    private static final String PAGES_PATH = System.getProperty("user.dir") + "\\src\\resources\\pages\\";
+    private static final String ASSETS_PATH = System.getProperty("user.dir") + "\\src\\resources\\assets\\";
     private static final String NOT_FOUND_PAGE = "not_found.html";
-    private static final Map<String, String> CONTENT_TYPES = new HashMap<String, String>(){{
+    private static final Map<String, String> CONTENT_TYPES = new HashMap<>() {{
         put("html", "text/html; charset=utf-8");
         put("text", "text/plain; charset=utf-8");
         put("png", "image/png");
@@ -43,26 +44,23 @@ public class RequestHandler {
         String contentType;
         String extension = Helpers.getExtension(this.httpRequest.getRequestUrl());
 
-        if (HTML_EXTENSION.equals(extension)) {
+        if (HTML_EXTENSION.equals(extension) || WebConstants.EMPTY_STRING.equals(extension)) {
             filePath = PAGES_PATH;
             contentType = CONTENT_TYPES.get(HTML_EXTENSION);
         } else {
             filePath = ASSETS_PATH;
+
             if (CONTENT_TYPES.containsKey(extension)) {
                 contentType = CONTENT_TYPES.get(extension);
             } else {
                 contentType = CONTENT_TYPES.get(TEXT_PLAIN_EXTENSION);
             }
         }
-
         File file = new File(String.format("%s%s", filePath, httpRequest.getRequestUrl().substring(1)));
         byte[] body = new byte[(int) file.length()];
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
             fileInputStream.read(body);
-            for (byte element : body) {
-                System.out.print((char) element);
-            }
             httpResponse.setStatusCode(SUCCESS_RESPONSE_CODE);
         } catch (FileNotFoundException fnfe) {
             fnfe.printStackTrace();
@@ -72,9 +70,6 @@ public class RequestHandler {
             body = new byte[(int) file.length()];
             FileInputStream fileInputStream = new FileInputStream(file);
             fileInputStream.read(body);
-            for (byte element : body) {
-                System.out.print((char) element);
-            }
         }
 
         httpResponse.addHeader("Content-Type", contentType);
