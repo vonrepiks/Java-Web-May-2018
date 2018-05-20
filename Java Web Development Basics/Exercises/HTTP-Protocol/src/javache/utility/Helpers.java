@@ -1,13 +1,14 @@
 package javache.utility;
 
+import java.io.File;
+
 public final class Helpers {
     private Helpers() {}
 
-    public static String getExtension(String url) {
-        int index = url.lastIndexOf(".");
-        if (index == -1) {
-            return "";
-        }
-        return url.substring(url.lastIndexOf(".") + 1);
+    public static String getExtension(File file) {
+        String fileName = file.getName();
+
+        int index = fileName.lastIndexOf(".");
+        return fileName.substring(fileName.lastIndexOf(".") + 1);
     }
 }

@@ -1,0 +1,11 @@
+h1, h2 {
+    text-align: center;
+}
+
+.page-not-found {
+    background-color: #0630FE;
+}
+
+.row {
+    margin-bottom: 50px;
+}

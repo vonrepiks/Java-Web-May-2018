@@ -3,20 +3,18 @@ package javache.http;
 import javache.constants.WebConstants;
 
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class HttpResponseImpl implements HttpResponse {
-    private static final Map<Integer, String> RESPONSE_LINE = new HashMap<>() {{
-        put(200, "200 OK");
-        put(404, "404 Not Found");
-    }};
 
     private Map<String, String> headers;
     private byte[] content;
-    private int statusCode;
+    private HttpStatus statusCode;
 
     public HttpResponseImpl() {
+        this.setContent(new byte[0]);
         this.headers = new HashMap<>();
     }
 
@@ -26,7 +24,7 @@ public class HttpResponseImpl implements HttpResponse {
     }
 
     @Override
-    public int getStatusCode() {
+    public HttpStatus getStatusCode() {
         return this.statusCode;
     }
 
@@ -37,28 +35,19 @@ public class HttpResponseImpl implements HttpResponse {
 
     @Override
     public byte[] getBytes() {
-        String responseLine = String.format("%s %s%s", WebConstants.HTTP_PROTOCOL_1, RESPONSE_LINE.get(this.statusCode), System.lineSeparator());
-        StringBuilder headers = new StringBuilder();
-        for (Map.Entry<String,String> entry : this.headers.entrySet()) {
-            headers.append(entry.getKey()).append(": ").append(entry.getValue()).append(System.lineSeparator());
-        }
-        headers.append(System.lineSeparator());
+        byte[] headersBytes = this.getHeadersBytes();
+        byte[] bodyBytes = this.getContent();
 
-        byte[] responseLineByteArray = responseLine.getBytes();
-        byte[] headersByteArray = headers.toString().getBytes();
-        byte[] contentByteArray = this.getContent();
+        byte[] fullResponse = new byte[headersBytes.length + bodyBytes.length];
 
-        byte[] result = new byte[responseLineByteArray.length + headersByteArray.length + content.length];
+        System.arraycopy(headersBytes, 0, fullResponse, 0, headersBytes.length);
+        System.arraycopy(bodyBytes, 0, fullResponse, headersBytes.length, bodyBytes.length);
 
-        System.arraycopy(responseLineByteArray, 0, result, 0, responseLineByteArray.length);
-        System.arraycopy(headersByteArray, 0, result, responseLineByteArray.length, headersByteArray.length);
-        System.arraycopy(contentByteArray, 0, result, responseLineByteArray.length + headersByteArray.length, contentByteArray.length);
-
-        return result;
+        return fullResponse;
     }
 
     @Override
-    public void setStatusCode(int statusCode) {
+    public void setStatusCode(HttpStatus statusCode) {
         this.statusCode = statusCode;
     }
 
@@ -70,5 +59,19 @@ public class HttpResponseImpl implements HttpResponse {
     @Override
     public void addHeader(String header, String value) {
         this.headers.put(header, value);
+    }
+
+    private byte[] getHeadersBytes() {
+        String responseLine = String.format("%s %s%s", WebConstants.HTTP_PROTOCOL_1, this.getStatusCode().getStatusPhrase(), System.lineSeparator());
+        StringBuilder headers = new StringBuilder(responseLine);
+        for (Map.Entry<String, String> entry : this.headers.entrySet()) {
+            headers.append(entry.getKey()).append(": ").append(entry.getValue()).append(System.lineSeparator());
+        }
+
+        headers.append(String.format("Date: %s", new Date())).append(System.lineSeparator());
+        headers.append("Server: Javache/1.1.1").append(System.lineSeparator());
+        headers.append(System.lineSeparator());
+
+        return headers.toString().getBytes();
     }
 }

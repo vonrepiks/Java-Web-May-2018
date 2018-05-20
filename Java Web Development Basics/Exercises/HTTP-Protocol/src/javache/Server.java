@@ -18,7 +18,7 @@ public class Server {
     private int port;
     private int timeouts;
 
-    Server(int port) {
+    public Server(int port) {
         this.port = port;
         this.timeouts = 1;
     }

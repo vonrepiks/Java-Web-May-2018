@@ -6,13 +6,13 @@ public interface HttpResponse {
 
     Map<String, String> getHeaders();
 
-    int getStatusCode();
+    HttpStatus getStatusCode();
 
     byte[] getContent();
 
     byte[] getBytes();
 
-    void setStatusCode(int statusCode);
+    void setStatusCode(HttpStatus statusCode);
 
     void setContent(byte[] content);
 

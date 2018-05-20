@@ -1,8 +1,11 @@
 package javache.http;
 
-import javache.constants.WebConstants;
+import javache.constants.NonSpecificConstants;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 public class HttpRequestImpl implements HttpRequest {
 
@@ -49,51 +52,62 @@ public class HttpRequestImpl implements HttpRequest {
 
     @Override
     public void addHeader(String header, String value) {
-        this.headers.put(header, value);
+        this.headers.putIfAbsent(header, value);
     }
 
     @Override
     public void addBodyParameter(String bodyParameter, String value) {
-        this.bodyParameters.put(bodyParameter, value);
+        this.bodyParameters.putIfAbsent(bodyParameter, value);
     }
 
     @Override
     public boolean isResource() {
-        return false;
+        return this.getRequestUrl().contains(".");
     }
 
     private void parseRequestContent(String requestContent) {
         String[] lines = requestContent.split("\r\n");
 
-        this.parseRequestLine(lines[0]);
+        this.parseRequestFirstLine(lines[0]);
         String[] remainLines = Arrays.stream(lines).skip(1).toArray(String[]::new);
-
-        for (int i = 0; i < remainLines.length; i++) {
-            if (WebConstants.EMPTY_STRING.equals(remainLines[i].trim())) {
-                if (i + 1 < remainLines.length) {
-                    this.parseBodyParameters(remainLines[i + 1]);
-                }
-                break;
-            }
-            String[] lineTokens = remainLines[i].split(":\\s");
-            this.addHeader(lineTokens[0], lineTokens[1]);
+        String bodyParameters = this.parseRequestHeaders(remainLines);
+        if (!NonSpecificConstants.EMPTY_STRING.equals(bodyParameters)) {
+            this.parseBodyParameters(bodyParameters);
         }
     }
 
-    private void parseRequestLine(String requestLine) {
+    private void parseRequestFirstLine(String requestLine) {
         String[] requestLineTokens = requestLine.split("\\s+");
         String method = requestLineTokens[0];
-        String uri = requestLineTokens[1];
+        String url = requestLineTokens[1];
 
         this.setMethod(method);
-        this.setRequestUrl(uri);
+        this.setRequestUrl(url);
     }
 
-    private void parseBodyParameters(String remainLine) {
-        String[] parameters = remainLine.split("&");
-        for (String parameter : parameters) {
-            String[] parameterTokens = parameter.split("=");
-            this.addBodyParameter(parameterTokens[0], parameterTokens[1]);
+    private String parseRequestHeaders(String[] remainLines) {
+        int endHeadersIndex = 0;
+        for (int i = 0; i < remainLines.length; i++) {
+            if (NonSpecificConstants.EMPTY_STRING.equals(remainLines[i].trim())) {
+                endHeadersIndex = i;
+                break;
+            }
+            String[] headerTokens = remainLines[i].split(":\\s");
+            this.addHeader(headerTokens[0], headerTokens[1]);
+        }
+        if (endHeadersIndex + 1 < remainLines.length) {
+            this.parseBodyParameters(remainLines[endHeadersIndex + 1]);
+        }
+        return "";
+    }
+
+    private void parseBodyParameters(String bodyParameters) {
+        if (this.getMethod().equals("POST")) {
+            String[] parameters = bodyParameters.split("&");
+            for (String parameter : parameters) {
+                String[] parameterTokens = parameter.split("=");
+                this.addBodyParameter(parameterTokens[0], parameterTokens[1]);
+            }
         }
     }
 }
