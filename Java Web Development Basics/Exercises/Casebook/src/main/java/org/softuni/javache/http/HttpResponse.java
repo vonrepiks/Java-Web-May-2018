@@ -1,21 +1,21 @@
 package org.softuni.javache.http;
 
-import org.softuni.javache.WebConstants;
+import org.softuni.WebConstants;
 
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.Map;
 
 public interface HttpResponse {
     enum ResponseLines {
-        OK (WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.OK.getStatusPhrase()),
-        CREATED (WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.CREATED.getStatusPhrase()),
-        NO_CONTENT (WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.NO_CONTENT.getStatusPhrase()),
-        SEE_OTHER (WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.SEE_ORDER.getStatusPhrase()),
-        BAD_REQUEST (WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.BAD_REQUEST.getStatusPhrase()),
-        UNAUTHORIZED (WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.UNAUTHORIZED.getStatusPhrase()),
-        FORBIDDEN (WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.FORBIDDEN.getStatusPhrase()),
-        NOT_FOUND (WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.NO_CONTENT.getStatusPhrase()),
-        INTERNAL_SERVER_ERROR (WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.INTERNAL_SERVER_ERROR.getStatusPhrase());
+        OK(WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.OK.getStatusPhrase()),
+        CREATED(WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.CREATED.getStatusPhrase()),
+        NO_CONTENT(WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.NO_CONTENT.getStatusPhrase()),
+        SEE_OTHER(WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.SEE_ORDER.getStatusPhrase()),
+        BAD_REQUEST(WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.BAD_REQUEST.getStatusPhrase()),
+        UNAUTHORIZED(WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.UNAUTHORIZED.getStatusPhrase()),
+        FORBIDDEN(WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.FORBIDDEN.getStatusPhrase()),
+        NOT_FOUND(WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.NOT_FOUND.getStatusPhrase()),
+        INTERNAL_SERVER_ERROR(WebConstants.SERVER_HTTP_VERSION + " " + HttpStatus.INTERNAL_SERVER_ERROR.getStatusPhrase());
 
         private String value;
 
@@ -28,7 +28,7 @@ public interface HttpResponse {
         }
     }
 
-    HashMap<String, String> getHeaders();
+    Map<String, String> getHeaders();
 
     HttpStatus getStatusCode();
 

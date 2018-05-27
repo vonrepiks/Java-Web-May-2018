@@ -2,6 +2,8 @@ package org.softuni.database.repositories;
 
 import org.softuni.database.entities.User;
 
+import javax.persistence.NoResultException;
+import javax.persistence.Query;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -30,7 +32,36 @@ public class UserRepositoryImpl extends BaseRepository {
     @Override
     public User findById(String id) {
         User user = (User) super.executeAction(result -> {
-            result.setResult(super.entityManager.createNativeQuery("SELECT * FROM users WHERE user_id = " + id, User.class));
+            Query nativeQuery = super.entityManager.createNativeQuery("SELECT * FROM users WHERE user_id = ?");
+
+            nativeQuery.setParameter(1, id);
+            Object queryResult = nativeQuery.getSingleResult();
+            Object[] results = (Object[]) queryResult;
+            User searchedUser = new User();
+            searchedUser.setId((String) results[0]);
+            searchedUser.setEmail((String) results[1]);
+            searchedUser.setPassword((String) results[2]);
+
+            result.setResult(searchedUser);
+        }).getResult();
+
+        return user;
+    }
+
+    @Override
+    public User getUserByEmail(String email) throws NoResultException {
+        User user = (User) super.executeAction(result -> {
+            Query nativeQuery = super.entityManager.createNativeQuery("SELECT * FROM users WHERE email = ?");
+
+            nativeQuery.setParameter(1, email);
+            Object queryResult = nativeQuery.getSingleResult();
+            Object[] results = (Object[]) queryResult;
+            User searchedUser = new User();
+            searchedUser.setId((String) results[0]);
+            searchedUser.setEmail((String) results[1]);
+            searchedUser.setPassword((String) results[2]);
+
+            result.setResult(searchedUser);
         }).getResult();
 
         return user;

@@ -4,7 +4,6 @@ import org.softuni.casebook.Casebook;
 import org.softuni.casebook.routes.RoutesManager;
 import org.softuni.casebook.routes.RoutesManagerImpl;
 import org.softuni.javache.Server;
-import org.softuni.javache.WebConstants;
 import org.softuni.javache.api.RequestHandler;
 import org.softuni.javache.http.HttpSessionStorageImpl;
 

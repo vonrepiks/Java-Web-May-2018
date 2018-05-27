@@ -1,0 +1,28 @@
+package org.softuni.casebook.constants;
+
+public final class CasebookConstants {
+
+    private static final String CASEBOOK_RESOURCE_PATH = "C:\\SoftUni\\Java-Web-May-2018\\Java Web Development Basics\\Exercises\\Casebook\\src\\main\\java\\org\\softuni\\casebook\\resources\\";
+
+    private static final String HEADERS_PATH = CASEBOOK_RESOURCE_PATH + "headers\\";
+
+    public static final String FOOTER_PATH = CASEBOOK_RESOURCE_PATH + "footer\\";
+
+    public static final String PUBLIC_RESOURCES_PATH = CASEBOOK_RESOURCE_PATH + "public\\";
+
+    public static final String TEMPLATES_PATH = CASEBOOK_RESOURCE_PATH + "templates\\";
+
+    public static final String USER_HEADER_HTML = HEADERS_PATH + "header-user.html";
+
+    public static final String GUEST_HEADER_HTML = HEADERS_PATH + "header-guest.html";
+
+    public static final String BASE_VIEW_HTML = CASEBOOK_RESOURCE_PATH + "base-template.html";
+
+    public static final String SERVER_SESSION_TOKEN = "Javache";
+
+    public static final String ERROR_MESSAGE_TYPE = "error";
+
+    public static final String SUCCESS_MESSAGE_TYPE = "success";
+
+    private CasebookConstants() {}
+}

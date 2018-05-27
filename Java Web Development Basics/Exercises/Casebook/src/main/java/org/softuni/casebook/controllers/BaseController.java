@@ -1,19 +1,27 @@
 package org.softuni.casebook.controllers;
 
-import org.softuni.casebook.utility.MimeTypeManager;
-import org.softuni.javache.WebConstants;
-import org.softuni.javache.http.HttpResponse;
-import org.softuni.javache.http.HttpStatus;
-
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import org.softuni.casebook.constants.CasebookConstants;
+import org.softuni.javache.http.*;
 
 public abstract class BaseController {
-    private static final String HTML_EXTENSION_AND_SEPARATOR = ".html";
+    private HttpSessionStorage sessionStorage;
 
-    protected BaseController() {
+    protected BaseController(HttpSessionStorage sessionStorage) {
+        this.sessionStorage = sessionStorage;
+    }
+
+    protected boolean isLoggedIn(HttpRequest httpRequest) {
+        if (!httpRequest.getCookies().containsKey(CasebookConstants.SERVER_SESSION_TOKEN)) {
+            return false;
+        }
+
+        String sessionId = httpRequest.getCookies().get(CasebookConstants.SERVER_SESSION_TOKEN).getValue();
+
+        if (!this.sessionStorage.getAllSessions().containsKey(sessionId)) {
+            return false;
+        }
+
+        return true;
     }
 
     protected byte[] ok(byte[] content, HttpResponse httpResponse) {
@@ -47,27 +55,7 @@ public abstract class BaseController {
         return httpResponse.getBytes();
     }
 
-    protected byte[] processPageRequest(String page, HttpResponse httpResponse) {
-        String pagePath = WebConstants.PAGES_FOLDER_PATH +
-                page
-                + HTML_EXTENSION_AND_SEPARATOR;
-
-        File file = new File(pagePath);
-
-        if(!file.exists() || file.isDirectory()) {
-            return this.notFound(("Page not found!").getBytes(), httpResponse);
-        }
-
-        byte[] result;
-
-        try {
-            result = Files.readAllBytes(Paths.get(pagePath));
-        } catch (IOException e) {
-            return this.internalServerError(("Something went wrong!").getBytes(), httpResponse);
-        }
-
-        httpResponse.addHeader("Content-Type", MimeTypeManager.getMimeType(file.getName()));
-
-        return this.ok(result, httpResponse);
+    protected HttpSessionStorage getSessionStorage() {
+        return this.sessionStorage;
     }
 }

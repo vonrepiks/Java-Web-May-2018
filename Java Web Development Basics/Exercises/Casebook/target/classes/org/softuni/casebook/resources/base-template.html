@@ -6,12 +6,16 @@
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 </head>
 <body>
-<div class="container">
-    <h1>Welcome to Casebook!</h1>
-    <hr />
-    <div class="jumbotron-fluid">
-        <h1>Something</h1>
-    </div>
-</div>
+{{header}}
+{{error}}
+{{success}}
+{{view}}
+{{footer}}
 </body>
 </html>
+
+<script>
+    function closeMessage(e) {
+        document.getElementById(e.id).style.display = 'none';
+    }
+</script>

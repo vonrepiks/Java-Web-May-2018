@@ -1,12 +1,13 @@
 package org.softuni.casebook;
 
 import org.softuni.casebook.controllers.BaseController;
-import org.softuni.casebook.controllers.ResourceController;
+import org.softuni.casebook.controllers.fixed.ResourceController;
 import org.softuni.casebook.routes.ControllerMethodEntry;
 import org.softuni.casebook.routes.RoutesManager;
 import org.softuni.javache.api.RequestHandler;
 import org.softuni.javache.http.*;
 
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Map;
@@ -14,15 +15,15 @@ import java.util.Map;
 public class Casebook implements RequestHandler {
     private HttpRequest httpRequest;
     private HttpResponse httpResponse;
-    private HttpSessionStorageImpl sessionStorage;
+    private HttpSessionStorage sessionStorage;
     private boolean hasIntercepted;
     private RoutesManager routesManager;
 
-    public Casebook(HttpSessionStorageImpl sessionStorage, RoutesManager routesManager) {
+    public Casebook(HttpSessionStorage sessionStorage, RoutesManager routesManager) {
         this.sessionStorage = sessionStorage;
         this.hasIntercepted = false;
         this.routesManager = routesManager;
-        this.routesManager.initializeRoots();
+        this.routesManager.initializeRoots(this.sessionStorage);
     }
 
     private byte[] processGetRequest() throws InvocationTargetException, IllegalAccessException {
@@ -30,62 +31,25 @@ public class Casebook implements RequestHandler {
         Map<String, ControllerMethodEntry<Method, BaseController>> getMappingRoutes = this.routesManager.getGetMappingRoutes();
         if (getMappingRoutes.containsKey(url)) {
             ControllerMethodEntry<Method, BaseController> entry = getMappingRoutes.get(url);
-            return (byte[]) entry.getKey().invoke(entry.getValue(), this.httpResponse);
+            return (byte[]) entry.getKey().invoke(entry.getValue(), this.httpRequest, this.httpResponse);
+        } else {
+            return new ResourceController(this.sessionStorage).processResourceRequest(this.httpRequest, this.httpResponse);
         }
-//        if(url.equals("/")) {
-//            //INDEX
-//
-//            return new HomeController(this.httpRequest, this.httpResponse).index("/index");
-//        } else if (url.equals("/login")) {
-//            //LOGIN
-//
-//            return new UserController(this.httpRequest, this.httpResponse).login(url);
-//        }
+    }
 
+    private byte[] processPostRequest() throws InvocationTargetException, IllegalAccessException {
+        String url = this.httpRequest.getRequestUrl();
+        Map<String, ControllerMethodEntry<Method, BaseController>> postMappingRoutes = this.routesManager.getPostMappingRoutes();
+        if (postMappingRoutes.containsKey(url)) {
+            ControllerMethodEntry<Method, BaseController> entry = postMappingRoutes.get(url);
+            return (byte[]) entry.getKey().invoke(entry.getValue(), this.httpRequest, this.httpResponse);
+        }
 
-//        else if (this.httpRequest.getRequestUrl().equals("/login")) {
-//            //LOGIN
-//            HttpSession session = new HttpSessionImpl();
-//            session.addAttribute("username", "Pesho");
-//
-//            this.sessionStorage.addSession(session);
-//
-//            this.httpResponse.addCookie("Javache", session.getId());
-//            return this.processPageRequest(this.httpRequest.getRequestUrl());
-//        } else if (this.httpRequest.getRequestUrl().equals("/logout")) {
-//            //LOGOUT
-//
-//            if(!this.httpRequest.getCookies().containsKey("Javache")) {
-//                return this.redirect(("You must login to access this route!").getBytes()
-//                        , "/");
-//            }
-//
-//            String sessionId = this.httpRequest.getCookies().get("Javache").getValue();
-//            this.sessionStorage.getById(sessionId).invalidate();
-//
-//            this.httpResponse.addCookie("Javache", "deleted; expires=Thu, 01 Jan 1970 00:00:00 GMT;");
-//
-//            return this.ok(("Successfully expired").getBytes());
-//        } else if (this.httpRequest.getRequestUrl().equals("/forbidden")) {
-//            //FORBIDDEN
-//
-//            if(!this.httpRequest.getCookies().containsKey("Javache")) {
-//                return this.redirect(("You must login to access this route!").getBytes()
-//                        , "/");
-//            }
-//
-//            String sessionId = this.httpRequest.getCookies().get("Javache").getValue();
-//            HttpSession session = this.sessionStorage.getById(sessionId);
-//            String username = session.getAttributes().get("username").toString();
-//
-//            return this.ok(("HELLO " + username + "!!!").getBytes());
-//        }
-
-        return new ResourceController().processResourceRequest(this.httpRequest, this.httpResponse);
+        return new byte[0];
     }
 
     @Override
-    public byte[] handleRequest(String requestContent) throws InvocationTargetException, IllegalAccessException {
+    public byte[] handleRequest(String requestContent) throws InvocationTargetException, IllegalAccessException, UnsupportedEncodingException {
         this.httpRequest = new HttpRequestImpl(requestContent);
         this.httpResponse = new HttpResponseImpl();
 
@@ -93,6 +57,8 @@ public class Casebook implements RequestHandler {
 
         if(this.httpRequest.getMethod().equals("GET")) {
             result = this.processGetRequest();
+        } else if (this.httpRequest.getMethod().equals("POST")) {
+            result = this.processPostRequest();
         }
 
         this.sessionStorage.refreshSessions();

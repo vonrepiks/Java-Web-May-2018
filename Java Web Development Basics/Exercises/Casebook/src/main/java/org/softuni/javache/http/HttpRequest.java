@@ -1,13 +1,13 @@
 package org.softuni.javache.http;
 
-import java.util.HashMap;
+import java.util.Map;
 
 public interface HttpRequest {
-    HashMap<String, String> getHeaders();
+    Map<String, String> getHeaders();
 
-    HashMap<String, String> getBodyParameters();
+    Map<String, String> getBodyParameters();
 
-    HashMap<String, HttpCookie> getCookies();
+    Map<String, HttpCookie> getCookies();
 
     String getMethod();
 

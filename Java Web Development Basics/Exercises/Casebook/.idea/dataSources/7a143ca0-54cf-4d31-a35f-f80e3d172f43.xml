@@ -1119,20 +1119,20 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="282" parent="279" name="password">
+    <column id="282" parent="279" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="279" name="username">
+    <column id="283" parent="279" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="284" parent="279" name="UK_r43af9ap4edm43mmtq01oddj6">
-      <ColNames>username</ColNames>
+    <index id="284" parent="279" name="UK_6dotkott2kjsp8vw4d0m25fb7">
+      <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
@@ -1141,9 +1141,9 @@
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="286" parent="279" name="UK_r43af9ap4edm43mmtq01oddj6">
-      <ColNames>username</ColNames>
-      <UnderlyingIndexName>UK_r43af9ap4edm43mmtq01oddj6</UnderlyingIndexName>
+    <key id="286" parent="279" name="UK_6dotkott2kjsp8vw4d0m25fb7">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>UK_6dotkott2kjsp8vw4d0m25fb7</UnderlyingIndexName>
     </key>
     <column id="287" parent="280" name="user_id">
       <Position>1</Position>

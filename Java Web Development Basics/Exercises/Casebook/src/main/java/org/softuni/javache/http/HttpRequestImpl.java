@@ -1,21 +1,24 @@
 package org.softuni.javache.http;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class HttpRequestImpl implements HttpRequest {
     private String method;
 
     private String requestUrl;
 
-    private HashMap<String, String> headers;
+    private Map<String, String> headers;
 
-    private HashMap<String, String> bodyParameters;
+    private Map<String, String> bodyParameters;
 
-    private HashMap<String, HttpCookie> cookies;
+    private Map<String, HttpCookie> cookies;
 
-    public HttpRequestImpl(String requestContent) {
+    public HttpRequestImpl(String requestContent) throws UnsupportedEncodingException {
         this.initMethod(requestContent);
         this.initRequestUrl(requestContent);
         this.initHeaders(requestContent);
@@ -48,7 +51,7 @@ public class HttpRequestImpl implements HttpRequest {
         }
     }
 
-    private void initBodyParameters(String requestContent) {
+    private void initBodyParameters(String requestContent) throws UnsupportedEncodingException {
         if(this.getMethod().equals("POST")) {
             this.bodyParameters = new HashMap<>();
 
@@ -60,7 +63,14 @@ public class HttpRequestImpl implements HttpRequest {
                 for (int i = 0; i < bodyParams.size(); i++) {
                     String[] bodyKeyValuePair = bodyParams.get(i).split("\\=");
 
-                    this.addBodyParameter(bodyKeyValuePair[0], bodyKeyValuePair[1]);
+                    if (bodyKeyValuePair.length != 2) {
+                        continue;
+                    }
+
+                    String key = URLDecoder.decode(bodyKeyValuePair[0], "UTF-8");
+                    String value = URLDecoder.decode(bodyKeyValuePair[1], "UTF-8");
+
+                    this.addBodyParameter(key, value);
                 }
             }
         }
@@ -84,17 +94,17 @@ public class HttpRequestImpl implements HttpRequest {
     }
 
     @Override
-    public HashMap<String, String> getHeaders() {
+    public Map<String, String> getHeaders() {
         return this.headers;
     }
 
     @Override
-    public HashMap<String, String> getBodyParameters() {
+    public Map<String, String> getBodyParameters() {
         return this.bodyParameters;
     }
 
     @Override
-    public HashMap<String, HttpCookie> getCookies() {
+    public Map<String, HttpCookie> getCookies() {
         return this.cookies;
     }
 
