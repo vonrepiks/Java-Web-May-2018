@@ -6,6 +6,9 @@ import org.softuni.casebook.annotations.PostMapping;
 import org.softuni.casebook.constants.CasebookConstants;
 import org.softuni.casebook.constants.ErrorMessages;
 import org.softuni.casebook.constants.SuccessMessages;
+import org.softuni.casebook.constants.WarningMessages;
+import org.softuni.casebook.template_engine.LimeLeafImpl;
+import org.softuni.casebook.utility.Notification;
 import org.softuni.database.entities.User;
 import org.softuni.database.repositories.BaseRepository;
 import org.softuni.database.repositories.UserRepositoryImpl;
@@ -19,18 +22,19 @@ import java.util.Map;
 public class UserController extends DynamicBaseController {
     private BaseRepository userRepository;
 
-    public UserController(HttpSessionStorage sessionStorage) {
-        super(sessionStorage);
+    public UserController(HttpSessionStorage sessionStorage, LimeLeafImpl limeLeaf, Notification notification) {
+        super(sessionStorage, limeLeaf, notification);
         this.userRepository = new UserRepositoryImpl();
     }
 
     @GetMapping(route = "/login")
     public byte[] loginGet(HttpRequest httpRequest, HttpResponse httpResponse) {
         if (super.isLoggedIn(httpRequest)) {
+            super.getLimeLeaf().addAttributeToViewData("warning", WarningMessages.RESTRICT_ACCESS_FOR_LOGGED_IN_USERS_MESSAGE);
             return super.redirect("home", httpRequest, httpResponse);
         }
         byte[] loginViewData = super.view("login", httpRequest, httpResponse);
-        super.getLimeLeaf().addAttributeToViewData("success", "");
+        super.getLimeLeaf().clearNotificationsMessages();
         return super.ok(loginViewData, httpResponse);
     }
 
@@ -78,6 +82,7 @@ public class UserController extends DynamicBaseController {
     @GetMapping(route = "/register")
     public byte[] registerGet(HttpRequest httpRequest, HttpResponse httpResponse) {
         if (super.isLoggedIn(httpRequest)) {
+            super.getLimeLeaf().addAttributeToViewData("warning", WarningMessages.RESTRICT_ACCESS_FOR_LOGGED_IN_USERS_MESSAGE);
             return super.redirect("home", httpRequest, httpResponse);
         }
         byte[] registerViewData = super.view("register", httpRequest, httpResponse);
@@ -140,6 +145,7 @@ public class UserController extends DynamicBaseController {
     @GetMapping(route = "/users/profile")
     public byte[] profile(HttpRequest httpRequest, HttpResponse httpResponse) {
         if (!super.isLoggedIn(httpRequest)) {
+            super.getLimeLeaf().addAttributeToViewData("warning", WarningMessages.RESTRICT_ACCESS_FOR_GUEST_USERS_MESSAGE);
             return super.redirect("login", httpRequest, httpResponse);
         }
 

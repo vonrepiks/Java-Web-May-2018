@@ -3,7 +3,8 @@ package org.softuni.casebook.controllers.dynamic;
 import org.softuni.casebook.constants.CasebookConstants;
 import org.softuni.casebook.constants.ErrorMessages;
 import org.softuni.casebook.controllers.BaseController;
-import org.softuni.casebook.utility.LimeLeaf;
+import org.softuni.casebook.template_engine.LimeLeafImpl;
+import org.softuni.casebook.utility.Notification;
 import org.softuni.database.entities.User;
 import org.softuni.database.repositories.UserRepository;
 import org.softuni.javache.http.HttpCookie;
@@ -16,13 +17,17 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
-public abstract class DynamicBaseController extends BaseController {
-    private static final String HTML_EXTENSION_AND_SEPARATOR = ".html";
-    private LimeLeaf limeLeaf;
+import static org.softuni.casebook.constants.CasebookConstants.HTML_EXTENSION_AND_SEPARATOR;
 
-    protected DynamicBaseController(HttpSessionStorage sessionStorage) {
+public abstract class DynamicBaseController extends BaseController {
+
+    private LimeLeafImpl limeLeaf;
+    private Notification notification;
+
+    protected DynamicBaseController(HttpSessionStorage sessionStorage, LimeLeafImpl limeLeaf, Notification notification) {
         super(sessionStorage);
-        this.limeLeaf = LimeLeaf.getInstance();
+        this.limeLeaf = limeLeaf;
+        this.notification = notification;
     }
 
     private String getHeaderContent(String headerPath) {
@@ -39,18 +44,6 @@ public abstract class DynamicBaseController extends BaseController {
             return this.getHeaderContent(CasebookConstants.USER_HEADER_HTML);
         } else {
             return this.getHeaderContent(CasebookConstants.GUEST_HEADER_HTML);
-        }
-    }
-
-    private String getMessage(String type) {
-        try {
-            if (!this.limeLeaf.getViewData().get(type).equals("")) {
-                List<String> view = Files.readAllLines(Paths.get(CasebookConstants.TEMPLATES_PATH + type + HTML_EXTENSION_AND_SEPARATOR));
-                return String.join("", view);
-            }
-            return null;
-        } catch (IOException e) {
-            return null;
         }
     }
 
@@ -97,8 +90,9 @@ public abstract class DynamicBaseController extends BaseController {
         String baseViewContent = this.getBaseView();
 
         String headerContent = this.getHeader(httpRequest);
-        String errorContent = this.getMessage(CasebookConstants.ERROR_MESSAGE_TYPE);
-        String successContent = this.getMessage(CasebookConstants.SUCCESS_MESSAGE_TYPE);
+        String errorContent = this.notification.getError(this.limeLeaf);
+        String successContent = this.notification.getSuccess(this.limeLeaf);
+        String warningContent = this.notification.getWarning(this.limeLeaf);
         String viewContent = this.getView(template);
         String footerContent = this.getFooter();
 
@@ -106,15 +100,17 @@ public abstract class DynamicBaseController extends BaseController {
             return super.notFound(ErrorMessages.NOT_FOUND_ERROR_MESSAGE.getBytes(), httpResponse);
         }
 
-        String renderedErrorContent = this.limeLeaf.renderHtml(errorContent == null ? "" : errorContent);
-        String renderedSuccessContent = this.limeLeaf.renderHtml(successContent == null ? "" : successContent);
+        String renderedErrorContent = this.limeLeaf.renderHtml(errorContent);
+        String renderedSuccessContent = this.limeLeaf.renderHtml(successContent);
+        String renderedWarningContent = this.limeLeaf.renderHtml(warningContent);
         String renderedContent = this.limeLeaf.renderHtml(viewContent);
 
         this.limeLeaf.addAttributeToViewData(CasebookConstants.ERROR_MESSAGE_TYPE, "");
 
         baseViewContent = baseViewContent.replace("{{header}}", headerContent == null ? "" : headerContent);
-        baseViewContent = baseViewContent.replace("{{error}}", renderedErrorContent == null ? "" : renderedErrorContent);
-        baseViewContent = baseViewContent.replace("{{success}}", renderedSuccessContent == null ? "" : renderedSuccessContent);
+        baseViewContent = baseViewContent.replace("{{error}}", renderedErrorContent);
+        baseViewContent = baseViewContent.replace("{{success}}", renderedSuccessContent);
+        baseViewContent = baseViewContent.replace("{{warning}}", renderedWarningContent);
         baseViewContent = baseViewContent.replace("{{view}}", renderedContent);
         baseViewContent = baseViewContent.replace("{{footer}}", footerContent == null ? "" : footerContent);
 
@@ -123,12 +119,12 @@ public abstract class DynamicBaseController extends BaseController {
         return baseViewContent.getBytes();
     }
 
-    public LimeLeaf getLimeLeaf() {
-        return this.limeLeaf;
-    }
-
     protected byte[] redirect(String location, HttpRequest httpRequest, HttpResponse httpResponse) {
         byte[] loginView = this.view(location, httpRequest, httpResponse);
         return redirect(loginView, "/" + location, httpResponse);
+    }
+
+    protected LimeLeafImpl getLimeLeaf() {
+        return this.limeLeaf;
     }
 }

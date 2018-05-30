@@ -12,6 +12,8 @@ public final class CasebookConstants {
 
     public static final String TEMPLATES_PATH = CASEBOOK_RESOURCE_PATH + "templates\\";
 
+    public static final String NOTIFICATIONS_PATH = CASEBOOK_RESOURCE_PATH + "notifications\\";
+
     public static final String USER_HEADER_HTML = HEADERS_PATH + "header-user.html";
 
     public static final String GUEST_HEADER_HTML = HEADERS_PATH + "header-guest.html";
@@ -23,6 +25,12 @@ public final class CasebookConstants {
     public static final String ERROR_MESSAGE_TYPE = "error";
 
     public static final String SUCCESS_MESSAGE_TYPE = "success";
+
+    public static final String WARNING_MESSAGE_TYPE = "warning";
+
+    public static final String HTML_EXTENSION_AND_SEPARATOR = ".html";
+
+    public static final String EMPTY_STRING = "";
 
     private CasebookConstants() {}
 }

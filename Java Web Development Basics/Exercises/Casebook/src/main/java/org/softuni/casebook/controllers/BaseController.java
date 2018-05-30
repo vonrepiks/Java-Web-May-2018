@@ -1,7 +1,10 @@
 package org.softuni.casebook.controllers;
 
 import org.softuni.casebook.constants.CasebookConstants;
-import org.softuni.javache.http.*;
+import org.softuni.javache.http.HttpRequest;
+import org.softuni.javache.http.HttpResponse;
+import org.softuni.javache.http.HttpSessionStorage;
+import org.softuni.javache.http.HttpStatus;
 
 public abstract class BaseController {
     private HttpSessionStorage sessionStorage;

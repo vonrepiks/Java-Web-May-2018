@@ -3,6 +3,9 @@ package org.softuni;
 import org.softuni.casebook.Casebook;
 import org.softuni.casebook.routes.RoutesManager;
 import org.softuni.casebook.routes.RoutesManagerImpl;
+import org.softuni.casebook.template_engine.LimeLeafImpl;
+import org.softuni.casebook.utility.Notification;
+import org.softuni.casebook.utility.NotificationImpl;
 import org.softuni.javache.Server;
 import org.softuni.javache.api.RequestHandler;
 import org.softuni.javache.http.HttpSessionStorageImpl;
@@ -24,9 +27,17 @@ public class StartUp {
         return new RoutesManagerImpl();
     }
 
+    private static LimeLeafImpl getLimeLeaf() {
+        return new LimeLeafImpl();
+    }
+
+    private static Notification getNotification() {
+        return new NotificationImpl();
+    }
+
     private static Set<RequestHandler> initializeApplications() {
         return new HashSet<>() {{
-            add(new Casebook(getSessionStorage(), getRoutesManager()));
+            add(new Casebook(getSessionStorage(), getRoutesManager(), getLimeLeaf(), getNotification()));
         }};
     }
 

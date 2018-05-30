@@ -1,6 +1,8 @@
 package org.softuni.casebook.routes;
 
-import org.softuni.casebook.controllers.BaseController;
+import org.softuni.casebook.controllers.dynamic.DynamicBaseController;
+import org.softuni.casebook.template_engine.LimeLeafImpl;
+import org.softuni.casebook.utility.Notification;
 import org.softuni.javache.http.HttpSessionStorage;
 
 import java.lang.reflect.Method;
@@ -8,9 +10,9 @@ import java.util.Map;
 
 public interface RoutesManager {
     @SuppressWarnings("unchecked")
-    void initializeRoots(HttpSessionStorage sessionStorage);
+    void initializeRoutes(HttpSessionStorage sessionStorage, LimeLeafImpl limeLeaf, Notification notification);
 
-    Map<String, ControllerMethodEntry<Method, BaseController>> getGetMappingRoutes();
+    Map<String, ControllerMethodEntry<Method, DynamicBaseController>> getGetMappingRoutes();
 
-    Map<String, ControllerMethodEntry<Method, BaseController>> getPostMappingRoutes();
+    Map<String, ControllerMethodEntry<Method, DynamicBaseController>> getPostMappingRoutes();
 }

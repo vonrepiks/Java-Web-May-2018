@@ -1,9 +1,11 @@
 package org.softuni.casebook;
 
-import org.softuni.casebook.controllers.BaseController;
+import org.softuni.casebook.controllers.dynamic.DynamicBaseController;
 import org.softuni.casebook.controllers.fixed.ResourceController;
 import org.softuni.casebook.routes.ControllerMethodEntry;
 import org.softuni.casebook.routes.RoutesManager;
+import org.softuni.casebook.template_engine.LimeLeafImpl;
+import org.softuni.casebook.utility.Notification;
 import org.softuni.javache.api.RequestHandler;
 import org.softuni.javache.http.*;
 
@@ -19,18 +21,18 @@ public class Casebook implements RequestHandler {
     private boolean hasIntercepted;
     private RoutesManager routesManager;
 
-    public Casebook(HttpSessionStorage sessionStorage, RoutesManager routesManager) {
+    public Casebook(HttpSessionStorage sessionStorage, RoutesManager routesManager, LimeLeafImpl limeLeaf, Notification notification) {
         this.sessionStorage = sessionStorage;
         this.hasIntercepted = false;
         this.routesManager = routesManager;
-        this.routesManager.initializeRoots(this.sessionStorage);
+        this.routesManager.initializeRoutes(this.sessionStorage, limeLeaf, notification);
     }
 
     private byte[] processGetRequest() throws InvocationTargetException, IllegalAccessException {
         String url = this.httpRequest.getRequestUrl();
-        Map<String, ControllerMethodEntry<Method, BaseController>> getMappingRoutes = this.routesManager.getGetMappingRoutes();
+        Map<String, ControllerMethodEntry<Method, DynamicBaseController>> getMappingRoutes = this.routesManager.getGetMappingRoutes();
         if (getMappingRoutes.containsKey(url)) {
-            ControllerMethodEntry<Method, BaseController> entry = getMappingRoutes.get(url);
+            ControllerMethodEntry<Method, DynamicBaseController> entry = getMappingRoutes.get(url);
             return (byte[]) entry.getKey().invoke(entry.getValue(), this.httpRequest, this.httpResponse);
         } else {
             return new ResourceController(this.sessionStorage).processResourceRequest(this.httpRequest, this.httpResponse);
@@ -39,9 +41,9 @@ public class Casebook implements RequestHandler {
 
     private byte[] processPostRequest() throws InvocationTargetException, IllegalAccessException {
         String url = this.httpRequest.getRequestUrl();
-        Map<String, ControllerMethodEntry<Method, BaseController>> postMappingRoutes = this.routesManager.getPostMappingRoutes();
+        Map<String, ControllerMethodEntry<Method, DynamicBaseController>> postMappingRoutes = this.routesManager.getPostMappingRoutes();
         if (postMappingRoutes.containsKey(url)) {
-            ControllerMethodEntry<Method, BaseController> entry = postMappingRoutes.get(url);
+            ControllerMethodEntry<Method, DynamicBaseController> entry = postMappingRoutes.get(url);
             return (byte[]) entry.getKey().invoke(entry.getValue(), this.httpRequest, this.httpResponse);
         }
 
