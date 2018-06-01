@@ -14,18 +14,18 @@
     <hr/>
     <c:choose>
         <c:when test="${cats.size() == 0}">
-            <h2>There are no cats.<a href="/cats/create">Create some!</a></h2>
+            <h2>There are no cats.<a href="<c:url value="/cats/create"/>">Create some!</a></h2>
         </c:when>
         <c:otherwise>
             <c:forEach items="${cats}" var="cat">
                 <h3>
-                    <a href="/cats/profile?name=${cat.name}">${cat.name}</a>
+                    <a href="<c:url value="/cats/profile?name=${cat.name}"/>">${cat.name}</a>
                 </h3>
             </c:forEach>
         </c:otherwise>
     </c:choose>
     <div class="mt-5">
-        <a href="/">Back To Home</a>
+        <a href="<c:url value="/"/>">Back To Home</a>
     </div>
 </div>
 </body>

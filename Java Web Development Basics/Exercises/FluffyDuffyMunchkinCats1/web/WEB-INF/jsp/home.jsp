@@ -13,10 +13,10 @@
     <h3>Navigate through the application using the links below!</h3>
     <hr/>
     <div class="mt-5">
-        <a href="/cats/create">Create cat</a>
+        <a href="<c:url value="/cats/create"/>">Create cat</a>
         <div>
     </div>
-        <a href="/cats/all">All cats</a>
+        <a href="<c:url value="/cats/all"/>">All cats</a>
     </div>
 </div>
 </body>

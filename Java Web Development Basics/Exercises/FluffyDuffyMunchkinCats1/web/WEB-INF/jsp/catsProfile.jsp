@@ -1,3 +1,5 @@
+<%--@elvariable id="cat" type="Cat.class"--%>
+<%--@elvariable id="catName" type="java.lang.String"--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
@@ -23,7 +25,7 @@
         </c:otherwise>
     </c:choose>
     <div class="mt-5">
-        <a href="/cats/all">Back</a>
+        <a href="<c:url value="/cats/all"/>">Back</a>
     </div>
 </div>
 </body>

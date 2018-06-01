@@ -30,7 +30,7 @@
         <button type="submit" class="btn btn-primary">Create cat</button>
     </form>
     <div class="mt-5">
-        <a href="/">Back To Home</a>
+        <a href="<c:url value="/"/>">Back To Home</a>
     </div>
 </div>
 </body>
