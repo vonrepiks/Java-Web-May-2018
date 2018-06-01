@@ -1,4 +1,4 @@
-package models;
+package data;
 
 public class Cat {
     private String name;

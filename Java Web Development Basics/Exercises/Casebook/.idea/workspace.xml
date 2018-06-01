@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e24d8312-778f-4498-b11b-fd609f32b876" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/.idea/artifacts/FluffyDuffyMunchkinCats1_ear_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/.idea/artifacts/ROOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/.idea/libraries/apache_tomcat_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/FluffyDuffyMunchkinCats1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/src/main/java/models/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/src/main/java/servlets/CatsAllServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/src/main/java/servlets/CatsProfileServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/src/main/java/servlets/CreateCatServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/src/main/java/servlets/HomeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/web/WEB-INF/jsp/catsAll.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/web/WEB-INF/jsp/catsProfile.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/web/WEB-INF/jsp/createCat.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/web/WEB-INF/jsp/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/web/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/web/styles/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/58cb51a6-097c-4dc4-839f-fd92b61012c5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/58cb51a6-097c-4dc4-839f-fd92b61012c5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/softuni/WebConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/softuni/WebConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/softuni/casebook/constants/CasebookConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/softuni/casebook/constants/CasebookConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/softuni/casebook/routes/RoutesManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/softuni/casebook/routes/RoutesManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/softuni/database/repositories/BaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/softuni/database/repositories/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FluffyDuffyMunchkinCats1/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,7 +42,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -175,6 +149,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,6 +198,16 @@
               <item name="Casebook" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="casebook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Casebook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Casebook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -236,8 +222,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -372,19 +356,19 @@
       <workItem from="1527595144535" duration="985000" />
       <workItem from="1527656641770" duration="5626000" />
       <workItem from="1527746965666" duration="6296000" />
-      <workItem from="1527763882121" duration="5725000" />
+      <workItem from="1527763882121" duration="6344000" />
+      <workItem from="1527848177790" duration="41000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91479000" />
+    <option name="totallyTimeSpent" value="92139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3293011" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -393,12 +377,12 @@
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3293011" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3293011" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Persistence" order="6" sideWeight="0.50403225" side_tool="true" weight="0.26285347" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49596775" visible="true" weight="0.283419" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49596775" visible="true" weight="0.28727508" />
       <window_info anchor="right" id="Database" order="5" weight="0.19473007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -406,6 +390,7 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39919356" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3293011" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.3293011" />
@@ -422,7 +407,7 @@
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.3293011" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3293011" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32969153" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="8" />
@@ -440,12 +425,12 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49596775" visible="true" weight="0.27570695" />
       <window_info anchor="right" id="Database" order="5" visible="true" weight="0.19473007" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32969153" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293011" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39919356" />
     </layout-to-restore>
@@ -645,14 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="107" column="52" lean-forward="true" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
-          <folding>
-            <element signature="method#getHeaderContent#0;class#DynamicBaseController#0" />
-            <element signature="method#getHeader#0;class#DynamicBaseController#0" />
-            <element signature="method#getView#0;class#DynamicBaseController#0" />
-            <element signature="method#getFooter#0;class#DynamicBaseController#0" />
-            <element signature="method#getBaseView#0;class#DynamicBaseController#0" />
-            <element signature="method#getCurrentUser#0;class#DynamicBaseController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,10 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="23" column="76" lean-forward="true" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
-          <folding>
-            <element signature="method#index#0;class#HomeController#0" />
-            <element signature="method#home#0;class#HomeController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,13 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="method#loginPost#0;class#UserController#0" />
-            <element signature="method#registerGet#0;class#UserController#0" />
-            <element signature="method#registerPost#0;class#UserController#0" />
-            <element signature="method#logout#0;class#UserController#0" />
-            <element signature="method#profile#0;class#UserController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,10 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
-          <folding>
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

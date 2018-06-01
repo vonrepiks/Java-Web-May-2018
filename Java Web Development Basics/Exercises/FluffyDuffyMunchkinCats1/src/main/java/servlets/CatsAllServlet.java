@@ -1,6 +1,6 @@
 package servlets;
 
-import models.Cat;
+import data.Cat;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

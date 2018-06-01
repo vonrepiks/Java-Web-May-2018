@@ -14,8 +14,8 @@
     <hr/>
     <div class="mt-5">
         <a href="/cats/create">Create cat</a>
+        <div>
     </div>
-    <div>
         <a href="/cats/all">All cats</a>
     </div>
 </div>
