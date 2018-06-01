@@ -1,0 +1,37 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<head>
+    <title>Fluffy Duffy Munchkin Cats </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="<c:url value="/styles/bootstrap.min.css" />" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="<c:url value="/images/favicon.ico" />" type="image/x-icon"/>
+</head>
+<body>
+<div class="container mt-3">
+    <h1 class="mb-5">Create a Cat!</h1>
+    <form method="post">
+        <div class="form-group row">
+            <label for="name" class="col-sm-3">Name</label>
+            <input type="text" class="form-control col-sm-9" id="name" name="name" placeholder="Enter name">
+        </div>
+        <div class="form-group row">
+            <label for="breed" class="col-sm-3">Breed</label>
+            <input type="text" class="form-control col-sm-9" id="breed" name="breed" placeholder="Enter breed">
+        </div>
+        <div class="form-group row">
+            <label for="color" class="col-sm-3">Color</label>
+            <input type="text" class="form-control col-sm-9" id="color" name="color" placeholder="Enter color">
+        </div>
+        <div class="form-group row">
+            <label for="legs" class="col-sm-3">Number of legs</label>
+            <input type="number" class="form-control col-sm-9" id="legs" name="legs" placeholder="Enter number of legs">
+        </div>
+        <button type="submit" class="btn btn-primary">Create cat</button>
+    </form>
+    <div class="mt-5">
+        <a href="/">Back To Home</a>
+    </div>
+</div>
+</body>
+</html>

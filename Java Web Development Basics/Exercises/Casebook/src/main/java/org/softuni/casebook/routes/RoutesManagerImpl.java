@@ -3,6 +3,7 @@ package org.softuni.casebook.routes;
 import org.softuni.casebook.annotations.Controller;
 import org.softuni.casebook.annotations.GetMapping;
 import org.softuni.casebook.annotations.PostMapping;
+import org.softuni.casebook.constants.CasebookConstants;
 import org.softuni.casebook.controllers.dynamic.DynamicBaseController;
 import org.softuni.casebook.template_engine.LimeLeafImpl;
 import org.softuni.casebook.utility.Notification;
@@ -17,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RoutesManagerImpl implements RoutesManager {
-    private static final String CONTROLLERS_FOLDER_PATH = "C:\\SoftUni\\Java-Web-May-2018\\Java Web Development Basics\\Exercises\\Casebook\\src\\main\\java\\org\\softuni\\casebook\\controllers\\";
+    private static final String CONTROLLERS_FOLDER_PATH = CasebookConstants.ROOT_FOLDER + "\\src\\main\\java\\org\\softuni\\casebook\\controllers\\";
     private static final String FILE_PATH_DELIMITER = "\\\\src\\\\main\\\\java\\\\";
     private static final String JAVA_FILE_EXTENSION = ".java";
 

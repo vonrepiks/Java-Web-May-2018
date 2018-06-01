@@ -2,7 +2,9 @@ package org.softuni.casebook.constants;
 
 public final class CasebookConstants {
 
-    private static final String CASEBOOK_RESOURCE_PATH = "C:\\SoftUni\\Java-Web-May-2018\\Java Web Development Basics\\Exercises\\Casebook\\src\\main\\java\\org\\softuni\\casebook\\resources\\";
+    public static final String ROOT_FOLDER = System.getProperty("user.dir");
+
+    private static final String CASEBOOK_RESOURCE_PATH = ROOT_FOLDER + "\\src\\main\\java\\org\\softuni\\casebook\\resources\\";
 
     private static final String HEADERS_PATH = CASEBOOK_RESOURCE_PATH + "headers\\";
 
