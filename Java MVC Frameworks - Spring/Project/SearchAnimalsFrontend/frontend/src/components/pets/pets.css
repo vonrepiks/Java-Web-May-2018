@@ -1,0 +1,50 @@
+.page-header {
+    margin: 0;
+    position: relative;
+    border-bottom: 0;
+    text-align: center;
+    color: #fff;
+    padding: 50px;
+    background: #ff9800 radial-gradient(circle, #ffc107, #ff9800);
+}
+
+.page-header > :first-child {
+    animation-delay: .3s;
+}
+
+.page-header h1 {
+    font-weight: 300;
+    font-size: 80px;
+    color: #fff;
+    animation-delay: .3s;
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .page-header h1 {
+        font-size: 48px;
+    }
+}
+
+.content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.big-container {
+    max-width: 1500px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.bg-grey {
+    background: #eee;
+    background: radial-gradient(circle,#fafafa,#eee);
+}

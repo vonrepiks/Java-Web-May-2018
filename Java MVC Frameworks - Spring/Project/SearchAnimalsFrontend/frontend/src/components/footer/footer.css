@@ -1,0 +1,13 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.panel {
+    margin-bottom: 0 !important;
+}
+
+.panel .panel-footer a {
+    margin-right: 30px;
+}

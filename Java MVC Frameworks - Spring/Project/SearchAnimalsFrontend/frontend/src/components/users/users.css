@@ -1,0 +1,31 @@
+.login-form h1, .register-form h1, .all-users h1 {
+    margin-bottom: 50px;
+}
+
+.login-form, .register-form, .all-users {
+    position: absolute;
+    top: 60px;
+    text-align: center;
+}
+
+.login-form label, .register-form label {
+    float: left;
+}
+
+.login-form a {
+    position: absolute;
+    right: 0;
+    color: #555;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.login-form-background, .register-form-background {
+    width: 100%;
+    height: 100vh;
+    background: no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

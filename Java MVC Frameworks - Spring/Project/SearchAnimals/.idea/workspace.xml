@@ -2,106 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21ca15d0-3eac-4025-ab14-f690fcbec026" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/SpringStartApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/dtos/UserFromRegisterDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/services/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/spring/utility/MapperConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/SearchAnimalsFrontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_spring_aop_5_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_spring_beans_5_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_spring_context_5_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_spring_core_5_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_spring_expression_5_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_spring_test_5_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_spring_web_5_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/frontend/frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../multi-module-app/multi-module-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react-app/src/main/java/com/example/demo/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react-app/src/main/java/com/example/demo/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../react-app/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/data/RepositoryActionInvoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/data/RepositoryActionResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/data/repositories/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/data/repositories/CatRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/.idea/artifacts/FluffyDuffyMunchkinCats1_ear_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/.idea/artifacts/ROOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/.idea/artifacts/ROOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/FluffyDuffyMunchkinCats1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/FluffyDuffyMunchkinCats1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/data/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/data/models/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/servlets/CatsAllServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/servlets/CatsAllServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/servlets/CatsProfileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/servlets/CatsProfileServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/servlets/CreateCatServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/servlets/CreateCatServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/servlets/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/src/main/java/servlets/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/web/WEB-INF/jsp/catsAll.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/FluffyDuffyMunchkinCats1/web/WEB-INF/jsp/catsAll.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/footer/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/footer/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/header/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/home/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/home/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/pets/pets.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/pets/report/ReportFoundPets.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/pets/report/ReportLostPets.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/pets/report/ReportPet.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/pets/search/SearchFoundPets.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/pets/search/SearchLostPets.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/pets/search/SearchPets.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/users/AllUsers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/users/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/users/Register.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/users/users.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/utility/HomeBackgroundVideo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/utility/InputField.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/components/utility/homeBackgroundVideo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/config/axiosInstance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchAnimalsFrontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SearchAnimalsFrontend/frontend/src/logo.svg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -351,12 +284,12 @@
       <option name="presentableId" value="Default" />
       <updated>1528219306963</updated>
       <workItem from="1528219314181" duration="2736000" />
-      <workItem from="1528223617647" duration="1183000" />
+      <workItem from="1528223617647" duration="1559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3919000" />
+    <option name="totallyTimeSpent" value="4295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -373,6 +306,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
@@ -389,7 +323,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
