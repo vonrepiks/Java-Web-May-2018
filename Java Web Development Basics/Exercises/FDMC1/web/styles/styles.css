@@ -1,0 +1,8 @@
+.order {
+    margin: 10px;
+    width: 45%;
+    border: 1px solid darkslategray;
+    padding: 30px;
+    border-radius: 40px;
+    display: inline-block;
+}
