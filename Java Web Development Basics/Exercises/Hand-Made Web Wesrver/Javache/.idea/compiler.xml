@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fdmc-1" />
-        <module name="FDMC1" />
+        <module name="Javache" />
+        <module name="org.softuni" />
       </profile>
     </annotationProcessing>
   </component>
