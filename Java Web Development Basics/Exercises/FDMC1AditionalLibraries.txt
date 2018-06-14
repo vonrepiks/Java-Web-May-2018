@@ -1,0 +1,16 @@
+Additional libraries:
+
+For JSP Standart Tag Library:
+1. jstl-1.2.jar
+
+For Hibernate integration:
+1. dom4j-1.1.jar
+2. mysql-connector-java-8.0.11.jar
+3. hibernate-commons-annotations-4.0.4.Final.jar
+4. hibernate-core-4.3.5.Final.jar
+5. jboss-logging-3.3.2.Final.jar
+6. jta-1.1.jar
+7. javax.persistence-api-2.2.jar
+8. hibernate-entitymanager-4.3.11.Final.jar
+9. jandex-2.0.5.Final.jar
+10. javassist-3.20.0-GA.jar
