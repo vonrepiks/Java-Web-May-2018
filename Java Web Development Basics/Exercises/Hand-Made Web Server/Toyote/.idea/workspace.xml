@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa037e9b-1bf2-4e1b-850b-7cc4b74c45af" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../App1/.idea/artifacts/ROOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/.idea/libraries/javache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/.idea/libraries/solet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/.idea/libraries/summer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/App1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/src/org/softuni/app/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/src/resources/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/src/resources/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/src/resources/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App1/src/resources/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Broccolina/.idea/libraries/javache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Javache/.idea/libraries/solet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Javache/.idea/libraries/summer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Javache/target/classes/config/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/.idea/artifacts/summer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/.idea/libraries/javache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/.idea/libraries/solet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/Summer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/SummerConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/api/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/api/GetMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/api/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/api/PathVariable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/api/PostMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/core/ControllerActionInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/core/DependencyContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/core/DispatcherSolet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/utility/ControllerActionPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/utility/ControllerLoadingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/utility/ParametersValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/utility/PathFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Summer/src/org/softuni/summer/utility/TemplateEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/toyote.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Toyote.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/softuni/toyote/ResourceHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/.idea/libraries/javache.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/Broccolina.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/src/org/softuni/broccolina/SoletDispatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/src/org/softuni/broccolina/solet/BaseHttpSolet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/src/org/softuni/broccolina/solet/HttpSolet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/src/org/softuni/broccolina/solet/HttpSoletRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/src/org/softuni/broccolina/solet/HttpSoletRequestImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/src/org/softuni/broccolina/solet/HttpSoletResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/src/org/softuni/broccolina/solet/HttpSoletResponseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Broccolina/src/org/softuni/broccolina/solet/SoletConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/.idea/artifacts/javache.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/Javache.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/StartUp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/ConnectionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/WebConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/api/RequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpCookie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpCookieImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpRequestImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpResponseImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpSessionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpSessionStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpSessionStorageImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/http/HttpStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/io/Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/io/Writer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/utility/InputStreamCachingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/utility/JavacheConfigService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/utility/LoggingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/src/main/java/org/softuni/javache/utility/RequestHandlerLoadingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/target/classes/config/config.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Hand-Made Web Wesrver/Javache/target/classes/run.bat" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ResourceHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/softuni/toyote/ResourceHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="17" column="120" selection-start-line="17" selection-start-column="120" selection-end-line="17" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getApplicationName</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/org/softuni/toyote/ResourceHandler.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Toyote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toyote" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toyote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toyote" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toyote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toyote" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toyote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toyote" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="toyote" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toyote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toyote" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toyote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toyote" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toyote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toyote" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toyote" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toyote" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="toyote" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SoftUni\Java-Web-May-2018\Java Web Development Basics\Exercises\Hand-Made Web Server\Toyote\src" />
+      <recent name="C:\SoftUni\Java-Web-May-2018\Java Web Development Basics\Exercises\Hand-Made Web Server\Toyote\lib" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa037e9b-1bf2-4e1b-850b-7cc4b74c45af" name="Default" comment="" />
+      <created>1529015501466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529015501466</updated>
+      <workItem from="1529015504684" duration="2581000" />
+      <workItem from="1529162938397" duration="4331000" />
+      <workItem from="1529235849155" duration="882000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7794000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25642672" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org/softuni/toyote/ResourceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="120" selection-start-line="17" selection-start-column="120" selection-end-line="17" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/softuni/toyote/ResourceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/softuni/toyote/ResourceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="17" column="120" selection-start-line="17" selection-start-column="120" selection-end-line="17" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>toyote</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Toyote</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>javache</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

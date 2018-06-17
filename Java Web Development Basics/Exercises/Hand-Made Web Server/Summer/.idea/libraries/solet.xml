@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="solet">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/solet.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

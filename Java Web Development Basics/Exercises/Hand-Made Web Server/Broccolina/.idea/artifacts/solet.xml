@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="solet">
+    <output-path>$PROJECT_DIR$/out/artifacts/solet</output-path>
+    <root id="archive" name="solet.jar">
+      <element id="directory" name="org">
+        <element id="directory" name="softuni">
+          <element id="directory" name="broccolina">
+            <element id="directory" name="solet">
+              <element id="dir-copy" path="$PROJECT_DIR$/out/production/Broccolina/org/softuni/broccolina/solet" />
+            </element>
+          </element>
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
