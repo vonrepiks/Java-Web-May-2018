@@ -1,0 +1,8 @@
+<div class="container" xmlns:th="http://www.thymeleaf.org">
+    <h1>All makes</h1>
+    <div class="d-flex flex-wrap">
+        <div class="mt-3 mr-3" th:each="make : ${viewModel}">
+            <a th:href="@{/cars/{make}(make=${make})}" th:text="${make}"></a>
+        </div>
+    </div>
+</div>

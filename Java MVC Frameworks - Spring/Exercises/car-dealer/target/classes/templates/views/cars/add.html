@@ -1,0 +1,26 @@
+<div class="container" xmlns:th="http://www.thymeleaf.org">
+    <h1 class="mb-5 text-center">Add car</h1>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <form th:method="post" th:action="@{/cars/add}">
+                <div class="form-group row">
+                    <label for="make" class="col-sm-3">Make</label>
+                    <input type="text" class="form-control col-sm-9" id="make" name="make" placeholder="Enter make">
+                </div>
+                <div class="form-group row">
+                    <label for="model" class="col-sm-3">Model</label>
+                    <input type="text" class="form-control col-sm-9" id="model" name="model" placeholder="Enter model">
+                </div>
+                <div class="form-group row">
+                    <label for="travelledDistance" class="col-sm-3">Travelled distance</label>
+                    <input type="number" class="form-control col-sm-9" id="travelledDistance" name="travelledDistance" placeholder="Enter travelled distance">
+                </div>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>

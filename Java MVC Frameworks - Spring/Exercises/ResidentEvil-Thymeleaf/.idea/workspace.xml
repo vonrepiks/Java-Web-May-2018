@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bb2e1bf7-50de-4eb1-9681-e694dbb2ab79" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/ResidentEvilApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/annotations/CreatorName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/annotations/DateBefore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/controllers/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/controllers/VirusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/dto/CapitalDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/dto/VirusAndCapitalsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/dto/VirusCreateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/dto/VirusShowDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/entities/Capital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/entities/Virus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/entities/enums/MagnitudeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/entities/enums/MutationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/repositories/CapitalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/repositories/VirusRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/services/CapitalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/services/CapitalServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/services/VirusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/services/VirusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/validators/CreatorNameValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/validators/DateBeforeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/static/javascript/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/static/javascript/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/static/styles/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/static/styles/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/viruses/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/viruses/all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/viruses/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/viruses/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/ResidentEvilApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/annotations/CreatorName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/annotations/DateBefore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/VirusController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/dto/CapitalDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/dto/VirusAndCapitalsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/dto/VirusCreateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/dto/VirusShowDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/Capital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/Virus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/enums/MagnitudeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/enums/MutationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/repositories/CapitalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/repositories/VirusRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/services/CapitalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/services/CapitalServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/services/VirusService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/services/VirusServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/validators/CreatorNameValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/app/validators/DateBeforeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/javascript/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/javascript/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/styles/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/viruses/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/viruses/all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/viruses/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/viruses/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/CarDealerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/config/ApplicationBeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/controllers/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/controllers/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/controllers/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/controllers/SaleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/controllers/SupplierController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/dtos/CarDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/dtos/CarWithPartsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/dtos/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/dtos/CustomerNameDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/dtos/CustomersOrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/dtos/LazySaleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/dtos/PartDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/dtos/SaleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/dtos/SalesByCustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/dtos/SupplierDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/entities/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/entities/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/entities/Part.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/entities/Sale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/entities/Supplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/repositories/CarRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/repositories/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/repositories/SaleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/repositories/SupplierRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/services/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/services/CarServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/services/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/services/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/services/SaleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/services/SaleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/services/SupplierService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/java/org/softuni/services/SupplierServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/static/javascript/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/static/javascript/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/views/car-with-parts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/views/cars-by-make.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/views/cars-makes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/views/customers-all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/views/customers-sales.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/views/sales/all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/views/sales/details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../car-dealer/src/main/resources/templates/views/suppliers-by-importer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/ChushkaAplicationBlock/app/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/ChushkaAplicationBlock/app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/ChushkaAplicationBlock/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/ChushkaAplicationBlock/javache/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/JavaEEBlock/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/JavaEEBlock/exam.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/.idea/artifacts/ROOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/TubesWebServlets.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/TubesHtmlConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/models/Tube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/repositories/TubeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/servlets/HomeTubeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/servlets/TubeCreateServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/servlets/TubeDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/resources/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/artifacts/ROOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/libraries/javache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/libraries/soletapi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/libraries/summer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/broccolina/.idea/libraries/javache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/broccolina/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/javache/.idea/libraries/soletapi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/javache/.idea/libraries/summer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/javache/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/summer/.idea/libraries/javache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/summer/.idea/libraries/soletapi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/summer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/toyote/.idea/libraries/javache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/toyote/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/dataSources/eab92b3d-a59b-4382-abbc-9f78ca1ee7eb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/dataSources/eab92b3d-a59b-4382-abbc-9f78ca1ee7eb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="resident_evil_db: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VirusController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/VirusController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#add#0;class#VirusController#0" />
+                <element signature="method#addConfirm#0;class#VirusController#0" />
+                <element signature="method#edit#0;class#VirusController#0" />
+                <element signature="method#editConfirm#0;class#VirusController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/viruses/delete.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="124" selection-start-line="26" selection-start-column="124" selection-end-line="26" selection-end-column="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/viruses/all.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="70" column="12" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="70" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>virusCreateDto.</find>
+      <find>object</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/ResidentEvilApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/javascript/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/test.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/enums/Creator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/annotations/Creator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/validators/CreatorValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/converters/RoleTypeConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/converters/MutationTypeConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/enums/MutationType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/enums/MagnitudeType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/annotations/DateBefore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/Capital.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/repositories/VirusRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/config/ApplicationConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/services/CapitalService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/services/CapitalServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/dto/CapitalDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/validators/DateBeforeValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/dto/VirusAndCapitalsDto.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/entities/Virus.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/viruses-add.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/BaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/dto/VirusShowDto.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/viruses-all.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/viruses-edit.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/dto/VirusCreateDto.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/viruses/all.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/viruses/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/repositories/CapitalRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/services/VirusService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/services/VirusServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/VirusController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/viruses/delete.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/styles/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/views/map.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/javascript/map.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ResidentEvil-Thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ResidentEvil-Thymeleaf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ResidentEvil-Thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ResidentEvil-Thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ResidentEvil-Thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ResidentEvil-Thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ResidentEvil-Thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ResidentEvil-Thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ResidentEvil-Thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ResidentEvil-Thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ResidentEvil-Thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ResidentEvil-Thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ResidentEvil-Thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ResidentEvil-Thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ResidentEvil-Thymeleaf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ResidentEvil-Thymeleaf" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\SoftUni\Java\Java-Web-May-2018\Java MVC Frameworks - Spring\Exercises\ResidentEvil-Thymeleaf\src\main\resources\templates\views\viruses" />
+      <recent name="H:\SoftUni\Java\Java-Web-May-2018\Java MVC Frameworks - Spring\Exercises\ResidentEvil-Thymeleaf\src\main\resources\static\styles" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.softuni.app.services" />
+      <recent name="org.softuni.app.dto" />
+      <recent name="org.softuni.app.entities" />
+      <recent name="org.softuni.app.validators" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.softuni.app.dto" />
+      <recent name="org.softuni.app.services" />
+      <recent name="org.softuni.app.repositories" />
+      <recent name="org.softuni.app.annotations" />
+      <recent name="org.softuni.app.entities.enums" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\SoftUni\Java\Java-Web-May-2018\Java MVC Frameworks - Spring\Exercises\ResidentEvil-Thymeleaf\src\main\resources\templates\views\viruses" />
+      <recent name="H:\SoftUni\Java\Java-Web-May-2018\Java MVC Frameworks - Spring\Exercises\ResidentEvil-Thymeleaf\src\main\resources\templates\views" />
+      <recent name="H:\SoftUni\Java\Java-Web-May-2018\Java MVC Frameworks - Spring\Exercises\ResidentEvil-Thymeleaf\src\main\java\org\softuni\app\entities" />
+      <recent name="H:\SoftUni\Java\Java-Web-May-2018\Java MVC Frameworks - Spring\Exercises\ResidentEvil-Thymeleaf\src\main\resources\static\javascript" />
+      <recent name="H:\SoftUni\Java\Java-Web-May-2018\Java MVC Frameworks - Spring\Exercises\ResidentEvil-Thymeleaf\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ResidentEvilApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ResidentEvil-Thymeleaf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.softuni.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.softuni.app.ResidentEvilApplication" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ResidentEvilApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bb2e1bf7-50de-4eb1-9681-e694dbb2ab79" name="Default" comment="" />
+      <created>1531559155974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531559155974</updated>
+      <workItem from="1531559161607" duration="54118000" />
+      <workItem from="1531662324255" duration="5351000" />
+      <workItem from="1531863382815" duration="127000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="59596000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.1702454" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3956229" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32996634" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="right" id="Bean Validation" order="3" weight="0.3297546" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32996634" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32996634" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/BaseController.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="29" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascript/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/993eeef4-64c5-41e9-aa1d-fddc7b363045/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/ResidentEvilApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascript/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/test.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/constraints/NotEmpty.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/entities/enums/Creator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/entities/converters/RoleTypeConverter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/entities/converters/MutationTypeConverter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/entities/enums/MagnitudeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/annotations/CreatorName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/config/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/repositories/VirusRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="98" selection-start-column="98" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/validators/CreatorNameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/entities/enums/MutationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/annotations/DateBefore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="667" column="19" selection-start-line="667" selection-start-column="19" selection-end-line="667" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.7.RELEASE/spring-context-5.0.7.RELEASE.jar!/org/springframework/validation/AbstractBindingResult.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/dto/CapitalDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/entities/Capital.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/entities/Virus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/dto/VirusShowDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="40" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/viruses/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="53" lean-forward="true" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/dto/VirusAndCapitalsDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/dto/VirusCreateDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/validators/DateBeforeValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/viruses/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="103" selection-start-line="2" selection-start-column="103" selection-end-line="2" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://993eeef4-64c5-41e9-aa1d-fddc7b363045/schema/resident_evil_db/table/capitals">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" text="name = 'Kingston'">
+            <filter text="name = 'Kingston'" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/repositories/CapitalRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/services/VirusService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/services/VirusServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="102" column="13" lean-forward="true" selection-start-line="102" selection-start-column="13" selection-end-line="102" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/services/CapitalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/services/CapitalServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://993eeef4-64c5-41e9-aa1d-fddc7b363045/schema/resident_evil_db/table/viruses_capitals">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://993eeef4-64c5-41e9-aa1d-fddc7b363045/schema/resident_evil_db/table/viruses">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1319#1320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/javascript/map.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/map.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/app/controllers/VirusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#add#0;class#VirusController#0" />
+            <element signature="method#addConfirm#0;class#VirusController#0" />
+            <element signature="method#edit#0;class#VirusController#0" />
+            <element signature="method#editConfirm#0;class#VirusController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/viruses/delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="124" selection-start-line="26" selection-start-column="124" selection-end-line="26" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/viruses/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="70" column="12" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="70" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>hamcrest-all-1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" xmlns:th="http://www.thymeleaf.org">
+    <div class="container-fluid">
+        <a class="navbar-brand" th:href="@{/}">Car Dealer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Customers
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="customersDropdown">
+                        <a class="dropdown-item" th:href="@{/customers/all/ascending}">Customers ascending order</a>
+                        <a class="dropdown-item" th:href="@{/customers/all/descending}">Customers descending order</a>
+                        <a class="dropdown-item" th:href="@{/customers/add}">Add customer</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="carsDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Cars
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="customersDropdown">
+                        <a class="dropdown-item" th:href="@{/cars/makes}">Cars makes</span></a>
+                        <a class="dropdown-item" th:href="@{/cars/add}">Add car</span></a>
+                        <a class="dropdown-item" th:href="@{/cars/add-parts}">Add car with parts</span></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="supplierssDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Suppliers
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="customersDropdown">
+                        <a class="dropdown-item" th:href="@{/suppliers/local}">Local suppliers</span></a>
+                        <a class="dropdown-item" th:href="@{/suppliers/importers}">Importer suppliers</span></a>
+                        <a class="dropdown-item" th:href="@{/suppliers/add}">Add supplier</span></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="salesDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Sales
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" th:href="@{/sales}">All sales</a>
+                        <a class="dropdown-item" th:href="@{/sales/add}">Add sale</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="partsDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Parts
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" th:href="@{/parts/all}">All parts</a>
+                        <a class="dropdown-item" th:href="@{/parts/add}">Add part</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="logsDropdown" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Logs
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" th:href="@{/logs/all}">All logs</a>
+                    </div>
+                </li>
+            </ul>
+            <a class="nav-link text-right text-dark" th:href="@{/users/logout}">Logout</span></a>
+        </div>
+    </div>
+</nav>

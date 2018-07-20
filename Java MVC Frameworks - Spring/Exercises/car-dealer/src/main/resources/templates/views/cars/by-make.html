@@ -1,0 +1,26 @@
+<div class="container" xmlns:th="http://www.thymeleaf.org">
+    <h1>Cars by make</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Make</th>
+            <th scope="col">Model</th>
+            <th scope="col">Travelled distance</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="car : ${viewModel}" th:object="${car}">
+            <tr>
+                <td th:text="*{make}"></td>
+                <td th:text="*{model}"></td>
+                <td th:text="*{travelledDistance}"></td>
+                <td>
+                    <a th:href="@{/cars/{id}/parts(id=${car.id})}">Details</a>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+    <a class="btn btn-outline-primary" th:href="@{/cars/makes}">Back to all car makes</a>
+</div>

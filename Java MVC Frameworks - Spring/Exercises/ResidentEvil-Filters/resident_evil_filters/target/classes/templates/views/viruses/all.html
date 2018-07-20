@@ -1,0 +1,28 @@
+<div class="container mb-5" xmlns:th="http://www.thymeleaf.org">
+    <h1 class="text-dark mb-4">All viruses</h1>
+    <table class="table">
+        <thead>
+        <tr class="text-center">
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Magnitude</th>
+            <th scope="col">Released On</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="virus : ${viewModel}" th:object="${virus}">
+            <tr class="text-center">
+                <th scope="row" th:text="*{id}"></th>
+                <td th:text="*{name}"></td>
+                <td th:text="*{magnitude}"></td>
+                <td th:text="*{#temporals.format(releasedOn, 'dd-MMM-yyyy')}"></td>
+                <td class="d-flex justify-content-between">
+                    <a class="btn btn-outline-secondary" th:href="@{/viruses/edit(id=${virus.id})}" th:text="Edit"></a>
+                    <a class="btn btn-outline-secondary" th:href="@{/viruses/delete(id=${virus.id})}" th:text="Delete"></a>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>

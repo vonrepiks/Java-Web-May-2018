@@ -1,0 +1,87 @@
+<div class="container mb-5" xmlns:th="http://www.thymeleaf.org">
+    <h1 class="text-dark">Confirm deletion Virus!</h1>
+    <form th:method="post" th:action="@{/viruses/delete(id=${#request.getParameter('id')})}" th:object="${viewModel}">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" th:field="*{virusCreateDto.name}" readonly>
+        </div>
+        <div class=" form-group
+            ">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" th:field="*{virusCreateDto.description}" readonly></textarea>
+        </div>
+        <div class="form-group">
+            <label for="sideEffects">Side Effects</label>
+            <input type="text" class="form-control" id="sideEffects" th:field="*{virusCreateDto.sideEffects}" readonly>
+        </div>
+        <div class="form-group">
+            <label for="creator">Creator</label>
+            <input type="text" class="form-control" id="creator" th:field="*{virusCreateDto.creator}" readonly>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="isDeadly" th:field="*{virusCreateDto.deadly}" disabled>
+                <label class="form-check-label" for="isDeadly">Is Deadly?</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="isCurable" th:field="*{virusCreateDto.curable}" disabled>
+                <label class="form-check-label" for="isCurable">Is Curable?</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" name="mutation" type="radio" id="zombie" th:value="ZOMBIE"
+                       th:field="*{virusCreateDto.mutation}" disabled>
+                <label class="form-check-label" for="zombie" th:text="ZOMBIE"></label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="mutation" type="radio" id="tyrant" th:value="T_078_TYRANT"
+                       th:field="*{virusCreateDto.mutation}" disabled>
+                <label class="form-check-label" for="tyrant" th:text="T_078_TYRANT"></label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" name="mutation" type="radio" id="giantSpider" th:value="GIANT_SPIDER"
+                       th:field="*{virusCreateDto.mutation}" disabled>
+                <label class="form-check-label" for="giantSpider" th:text="GIANT_SPIDER"></label>
+            </div>
+            <div class="form-check disabled">
+                <input class="form-check-input" name="mutation" type="radio" id="save_humanity" value="saveHumanity"
+                       th:value="save_humanity" disabled>
+                <label class="form-check-label" for="save_humanity">Save Humanity</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="turnoverRate">Turnover Rate</label>
+            <input type="number" class="form-control" id="turnoverRate" th:field="*{virusCreateDto.turnoverRate}" readonly>
+        </div>
+        <div class="form-group">
+            <label for="hoursUntilTurn">Hours Until Turn</label>
+            <input type="number" class="form-control" id="hoursUntilTurn" th:field="*{virusCreateDto.hoursUntilTurn}" readonly>
+        </div>
+        <div class="form-group">
+            <label for="magnitude">Magnitude</label>
+            <select class="form-control" id="magnitude" th:field="*{virusCreateDto.magnitude}" readonly>
+                <option th:value="low">Low</option>
+                <option th:value="medium">Medium</option>
+                <option th:value="high">High</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="releasedOn">Release Date</label>
+            <input type="date" class="form-control" id="releasedOn" th:field="*{virusCreateDto.releasedOn}" readonly>
+        </div>
+        <div class="form-group">
+            <label for="capitals">Affected Capitals</label>
+            <select multiple class="form-control" id="capitals" name="capitals" th:field="*{virusCreateDto.capitals}" readonly>
+                <option th:each="capital : *{capitalDtos}"
+                        th:selected="${capital.name}"
+                        th:value="${capital.name}"
+                        th:text="${capital.name}">
+                </option>
+            </select>
+        </div>
+        <div class="text-center mt-5">
+            <button type="submit" class="btn btn-primary">Delete</button>
+        </div>
+    </form>
+</div>

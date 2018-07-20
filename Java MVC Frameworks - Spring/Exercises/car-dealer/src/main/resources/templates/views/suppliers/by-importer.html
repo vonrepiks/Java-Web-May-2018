@@ -1,0 +1,24 @@
+<div class="container" xmlns:th="http://www.thymeleaf.org">
+    <h1>Local suppliers</h1>
+    <table class="table" style="text-align: center">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Count of offer parts</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="supplier : *{viewModel}" th:object="${supplier}">
+            <tr>
+                <td th:text="*{name}"></td>
+                <td th:text="*{countOfParts}"></td>
+                <td>
+                    <a th:href="@{/suppliers/edit/{id}(id=${supplier.id})}">Edit</a>
+                    <a th:href="@{/suppliers/delete/{id}(id=${supplier.id})}">Delete</a>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>

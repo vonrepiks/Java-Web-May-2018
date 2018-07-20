@@ -1,0 +1,28 @@
+<div class="container" xmlns:th="http://www.thymeleaf.org">
+    <h1>All parts</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Supplier name</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="part : ${viewModel}" th:object="${part}">
+            <tr>
+                <td th:text="*{name}"></td>
+                <td th:text="*{price}"></td>
+                <td th:text="*{quantity}"></td>
+                <td th:text="*{supplierName}"></td>
+                <td>
+                    <a th:href="@{/parts/edit/{id}(id=${part.id})}">Edit</a>
+                    <a th:href="@{/parts/delete/{id}(id=${part.id})}">Delete</a>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>

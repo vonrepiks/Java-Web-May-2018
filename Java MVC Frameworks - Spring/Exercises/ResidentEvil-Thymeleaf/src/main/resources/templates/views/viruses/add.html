@@ -1,0 +1,99 @@
+<div class="container mb-5" xmlns:th="http://www.thymeleaf.org">
+    <h1 class="text-dark">Spread a new Virus!</h1>
+    <form th:method="post" th:action="@{/viruses/add}" th:object="${virusAndCapitalsDto}">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control"
+                   th:classappend="${#fields.hasErrors('virusCreateDto.name')}? 'is-invalid'" id="name"
+                   th:field="*{virusCreateDto.name}">
+            <small class="invalid-feedback" id="nameHelp" th:each="error : ${#fields.errors('virusCreateDto.name')}" th:text="${error}"></small>
+        </div>
+        <div class=" form-group
+            ">
+            <label for="description">Description</label>
+            <textarea th:classappend="${#fields.hasErrors('virusCreateDto.description')}? 'is-invalid'" class="form-control" id="description" th:field="*{virusCreateDto.description}"></textarea>
+            <small class="invalid-feedback" id="descriptionHelp" th:each="error : ${#fields.errors('virusCreateDto.description')}" th:text="${error}"></small>
+        </div>
+        <div class="form-group">
+            <label for="sideEffects">Side Effects</label>
+            <input type="text" class="form-control" th:classappend="${#fields.hasErrors('virusCreateDto.sideEffects')}? 'is-invalid'" id="sideEffects" th:field="*{virusCreateDto.sideEffects}">
+            <small class="invalid-feedback" id="sideEffectsHelp" th:each="error : ${#fields.errors('virusCreateDto.sideEffects')}" th:text="${error}"></small>
+        </div>
+        <div class="form-group">
+            <label for="creator">Creator</label>
+            <input type="text" class="form-control" th:classappend="${#fields.hasErrors('virusCreateDto.creator')}? 'is-invalid'" id="creator" th:field="*{virusCreateDto.creator}">
+            <small class="invalid-feedback" id="creatorHelp" th:each="error : ${#fields.errors('virusCreateDto.creator')}" th:text="${error}"></small>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="isDeadly" th:field="*{virusCreateDto.deadly}">
+                <label class="form-check-label" for="isDeadly">Is Deadly?</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="isCurable" th:field="*{virusCreateDto.curable}">
+                <label class="form-check-label" for="isCurable">Is Curable?</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" th:classappend="${#fields.hasErrors('virusCreateDto.mutation')}? 'is-invalid'" name="mutation" type="radio" id="zombie" th:value="zombie"
+                       th:field="*{virusCreateDto.mutation}">
+                <label class="form-check-label" for="zombie" th:text="ZOMBIE"></label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" th:classappend="${#fields.hasErrors('virusCreateDto.mutation')}? 'is-invalid'" name="mutation" type="radio" id="tyrant" th:value="t_078_tyrant"
+                       th:field="*{virusCreateDto.mutation}">
+                <label class="form-check-label" for="tyrant" th:text="T_078_TYRANT"></label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" th:classappend="${#fields.hasErrors('virusCreateDto.mutation')}? 'is-invalid'" name="mutation" type="radio" id="giantSpider" th:value="giant_spider"
+                       th:field="*{virusCreateDto.mutation}">
+                <label class="form-check-label" for="giantSpider" th:text="GIANT_SPIDER"></label>
+            </div>
+            <div class="form-check disabled">
+                <input class="form-check-input" name="mutation" type="radio" id="save_humanity" value="saveHumanity"
+                       th:value="save_humanity" disabled>
+                <label class="form-check-label" for="save_humanity">Save Humanity</label>
+            </div>
+            <small class="invalid-feedback mutation" id="mutationHelp" th:each="error : ${#fields.errors('virusCreateDto.mutation')}" th:text="${error}"></small>
+        </div>
+        <div class="form-group">
+            <label for="turnoverRate">Turnover Rate</label>
+            <input type="number" class="form-control" th:classappend="${#fields.hasErrors('virusCreateDto.turnoverRate')}? 'is-invalid'" id="turnoverRate" th:field="*{virusCreateDto.turnoverRate}">
+            <small class="invalid-feedback" id="turnoverRateHelp" th:each="error : ${#fields.errors('virusCreateDto.turnoverRate')}" th:text="${error}"></small>
+        </div>
+        <div class="form-group">
+            <label for="hoursUntilTurn">Hours Until Turn</label>
+            <input type="number" class="form-control" th:classappend="${#fields.hasErrors('virusCreateDto.hoursUntilTurn')}? 'is-invalid'" id="hoursUntilTurn" th:field="*{virusCreateDto.hoursUntilTurn}">
+            <small class="invalid-feedback" id="hoursUntilTurnHelp" th:each="error : ${#fields.errors('virusCreateDto.hoursUntilTurn')}" th:text="${error}"></small>
+        </div>
+        <div class="form-group">
+            <label for="magnitude">Magnitude</label>
+            <select class="form-control" th:classappend="${#fields.hasErrors('virusCreateDto.magnitude')}? 'is-invalid'" id="magnitude" th:field="*{virusCreateDto.magnitude}">
+                <option th:value="low">Low</option>
+                <option th:value="medium">Medium</option>
+                <option th:value="high">High</option>
+            </select>
+            <small class="invalid-feedback" id="magnitudeHelp" th:each="error : ${#fields.errors('virusCreateDto.magnitude')}" th:text="${error}"></small>
+        </div>
+        <div class="form-group">
+            <label for="releasedOn">Release Date</label>
+            <input type="date" class="form-control" th:classappend="${#fields.hasErrors('virusCreateDto.releasedOn')}? 'is-invalid'" id="releasedOn" th:field="*{virusCreateDto.releasedOn}">
+            <small class="invalid-feedback" id="releasedOnHelp" th:each="error : ${#fields.errors('virusCreateDto.releasedOn')}" th:text="${error}"></small>
+        </div>
+        <div class="form-group">
+            <label for="capitals">Affected Capitals</label>
+            <select multiple class="form-control" th:classappend="${#fields.hasErrors('virusCreateDto.capitals')}? 'is-invalid'" id="capitals" name="capitals" th:field="*{virusCreateDto.capitals}">
+                <option th:each="capital : *{capitalDtos}"
+                        th:selected="${capital.name}"
+                        th:value="${capital.name}"
+                        th:text="${capital.name}">
+                </option>
+            </select>
+            <small class="invalid-feedback" id="capitalsHelp" th:each="error : ${#fields.errors('virusCreateDto.capitals')}" th:text="${error}"></small>
+        </div>
+        <div class="text-center mt-5">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</div>

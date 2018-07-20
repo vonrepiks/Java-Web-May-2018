@@ -1,0 +1,48 @@
+<div class="container" xmlns:th="http://www.thymeleaf.org">
+    <h1 class="mb-5 text-center">Add sale</h1>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <form th:method="post" th:action="@{/sales/add}" th:object="${viewModel}">
+                <div class="form-group row">
+                    <label class="col-sm-3">Customer</label>
+                    <span class="form-control col-sm-9" th:text="*{customer.name}"></span>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-3">Car</label>
+                    <span class="form-control col-sm-9" th:text="|*{car.make} *{car.model}|"></span>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-3">Discount</label>
+                    <th:block th:if="*{customer.young}">
+                        <span class="form-control col-sm-9" th:utext="|*{discount}% (+5%)|"></span>
+                    </th:block>
+                    <th:block th:unless="*{customer.young}">
+                        <span class="form-control col-sm-9" th:utext="|*{discount}%|"></span>
+                    </th:block>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-3">Car price</label>
+                    <span class="form-control col-sm-9" th:text="*{#numbers.formatDecimal(car.price, 0, 2)}"></span>
+                </div>
+                <th:block th:if="*{customer.young}">
+                    <div class="form-group row" th:with="result=*{car.price - ((car.price * (discount + 5)) / 100)}">
+                        <label class="col-sm-3">Final car price</label>
+                        <span class="form-control col-sm-9" th:text="${#numbers.formatDecimal(result, 0, 2)}"></span>
+                    </div>
+                </th:block>
+                <th:block th:unless="*{customer.young}">
+                    <div class="form-group row" th:with="result=*{car.price - ((car.price * (discount)) / 100)}">
+                        <label class="col-sm-3">Final car price</label>
+                        <span class="form-control col-sm-9" th:text="${#numbers.formatDecimal(result, 0, 2)}"></span>
+                    </div>
+                </th:block>
+                <div class="text-center mt-3">
+                    <a th:href="@{/}" class="btn btn-outline-primary">Cancel</a>
+                    <button type="submit" class="btn btn-primary">Finalize</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>

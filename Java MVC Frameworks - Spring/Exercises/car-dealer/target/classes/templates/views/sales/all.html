@@ -1,0 +1,25 @@
+<div class="container" xmlns:th="http://www.thymeleaf.org">
+    <h1>All sales</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Car make</th>
+            <th scope="col">Customer name</th>
+            <th scope="col">Discount</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="sale : *{viewModel}" th:object="${sale}">
+            <tr>
+                <td th:text="*{carMake}"></td>
+                <td th:text="*{customerName}"></td>
+                <td th:text="*{discount}"></td>
+                <td>
+                    <a th:href="@{/sales/{id}(id=${sale.id})}">Details</a>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>

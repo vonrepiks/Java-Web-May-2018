@@ -1,0 +1,35 @@
+<div class="container" xmlns:th="http://www.thymeleaf.org">
+    <div class="logs-header mb-5">
+        <form class="form-inline" th:method="post" th:action="@{/logs/search}">
+            <div class="form-group row">
+                <input type="text" class="form-control mr-5" name="user" placeholder="Username...">
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Search Logs</button>
+            </div>
+        </form>
+        <form class="form-inline ml-5" th:method="post" th:action="@{/logs/clear}">
+            <button type="submit" class="btn btn-primary clear-button">Clear All Logs</button>
+        </form>
+    </div>
+    <table class="table" style="text-align: center">
+        <thead>
+        <tr>
+            <th scope="col">User</th>
+            <th scope="col">Operation</th>
+            <th scope="col">Modified table</th>
+            <th scope="col">Time</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="logDto : *{viewModel}" th:object="${logDto}">
+            <tr>
+                <td th:text="*{user}"></td>
+                <td th:text="*{operation}"></td>
+                <td th:text="*{tableName}"></td>
+                <td th:text="*{#temporals.format(modifyingDate, 'dd-MMM-yyyy HH:mm:ss')}"></td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>

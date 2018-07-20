@@ -1,0 +1,30 @@
+<div class="container" xmlns:th="http://www.thymeleaf.org">
+    <h1 class="mb-5 text-center">Delete part</h1>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <form th:method="post" th:object="${viewModel}">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-3">Name</label>
+                    <input type="text" class="form-control col-sm-9" id="name" th:field="*{name}" readonly>
+                </div>
+                <div class="form-group row">
+                    <label for="price" class="col-sm-3">Price</label>
+                    <input type="number" class="form-control col-sm-9" id="price" th:field="*{price}" readonly>
+                </div>
+                <div class="form-group row">
+                    <label for="quantity" class="col-sm-3">Quantity</label>
+                    <input type="number" class="form-control col-sm-9" id="quantity" th:field="*{quantity}" readonly>
+                </div>
+                <div class="form-group row">
+                    <label for="supplier" class="col-sm-3">Supplier</label>
+                    <input type="text" class="form-control col-sm-9" id="supplier" th:field="*{supplierName}" readonly>
+                </div>
+                <div class="text-center mt-3">
+                    <button type="submit" class="btn btn-primary">Delete</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
