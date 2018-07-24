@@ -1,0 +1,54 @@
+<div class="container mb-5" xmlns:th="http://www.thymeleaf.org">
+    <h1 class="text-dark mb-4">All users</h1>
+    <table class="table">
+        <thead>
+        <tr class="text-center">
+            <th scope="col">Username</th>
+            <th scope="col">Authorities</th>
+            <th scope="col">Modify authorities</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="user, iter : ${viewModel}" th:object="${user}">
+            <tr class="text-center" th:if="${user.username != #authentication.getPrincipal().getUsername()}">
+                <td th:text="*{username}"></td>
+                <td th:if="*{#lists.contains(authorities, 'ADMIN')}" colspan="2">
+                    <strong>Sorry I am ADMIN may be next time!!!</strong>
+                </td>
+                <td th:unless="*{#lists.contains(authorities, 'ADMIN')}" colspan="2" th:id="'form-role-' + ${iter.index}" style="display: none;">
+                    <form class="form-inline justify-content-around" th:method="post" th:action="@{/users/changeRole(id=${user.id})}">
+                        <select class="form-control" id="authority" name="authority">
+                            <option th:value="ADMIN">ADMIN</option>
+                            <option th:value="MODERATOR">MODERATOR</option>
+                            <option th:value="USER">USER</option>
+                        </select>
+                        <button type="submit">Change Role</button>
+                    </form>
+                </td>
+                <td th:unless="*{#lists.contains(authorities, 'ADMIN')}" th:id="'user-' + ${iter.index}" th:text="*{#strings.listJoin(authorities, ' | ')}"></td>
+                <td th:unless="*{#lists.contains(authorities, 'ADMIN')}" th:id="'button-' + ${iter.index}">
+                    <a th:id="'change-role-' + ${iter.index}" class="btn btn-outline-secondary" th:onclick="'changeRole(\'' + ${iter.index} + '\')'" th:text="Modify"></a>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function changeRole(index) {
+        const roleElement = document.getElementById(`user-${index}`);
+        const buttonElement = document.getElementById(`button-${index}`);
+        let form = document.getElementById(`form-role-${index}`);
+
+        if (roleElement.style.display === "none") {
+            roleElement.style.display = "block";
+            buttonElement.style.display = "block";
+            form.style.display = "none";
+        } else {
+            roleElement.style.display = "none";
+            buttonElement.style.display = "none";
+            form.style.display = "table-cell";
+        }
+    }
+</script>

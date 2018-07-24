@@ -2,265 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1de8a57a-65e5-4b47-90d8-f6726bdb1d37" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/ResidentEvilApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/annotations/CreatorName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/annotations/DateBefore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/annotations/PreAuthenticate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/controllers/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/controllers/VirusController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/interceptors/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/interceptors/LogoutInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/interceptors/PreAuthenticateInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/interceptors/RegisterInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/dto/CapitalDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/dto/LoginUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/dto/RegisterUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/dto/RoleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/dto/VirusAndCapitalsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/dto/VirusCreateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/dto/VirusShowDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/entities/Capital.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/entities/Virus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/entities/enums/MagnitudeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/models/entities/enums/MutationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/repositories/CapitalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/repositories/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/repositories/VirusRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/services/CapitalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/services/CapitalServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/services/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/services/VirusService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/services/VirusServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/validators/CreatorNameValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/java/org/softuni/app/validators/DateBeforeValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/static/javascript/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/static/javascript/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/static/styles/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/static/styles/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/fragments/navbar-guest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/fragments/navbar-user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/users/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/users/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/viruses/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/viruses/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/viruses/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Filters/resident_evil_filters/src/main/resources/templates/views/viruses/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/ResidentEvilApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/annotations/CreatorName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/annotations/DateBefore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/config/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/controllers/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/controllers/VirusController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/dto/CapitalDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/dto/VirusAndCapitalsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/dto/VirusCreateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/dto/VirusShowDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/entities/Capital.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/entities/Virus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/entities/enums/MagnitudeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/entities/enums/MutationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/repositories/CapitalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/repositories/VirusRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/services/CapitalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/services/CapitalServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/services/VirusService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/services/VirusServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/validators/CreatorNameValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/java/org/softuni/app/validators/DateBeforeValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/static/javascript/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/static/javascript/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/static/styles/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/static/styles/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/templates/fragments/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/templates/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/templates/views/viruses/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/templates/views/viruses/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/templates/views/viruses/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ResidentEvil-Thymeleaf/src/main/resources/templates/views/viruses/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/CarDealerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/annotations/PreAuthenticate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/comparators/LoggerComparatorByDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/config/ApplicationBeanConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/config/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/controllers/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/controllers/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/controllers/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/controllers/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/controllers/LoggerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/controllers/PartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/controllers/SaleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/controllers/SupplierController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/cars/CarCreateSaleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/cars/CarDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/cars/CarWithPartsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/cars/CreateCarDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/cars/CreateCarWithParts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/customers/CreateCustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/customers/CustomerCreateSaleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/customers/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/customers/CustomerNameDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/customers/CustomersOrderDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/customers/EditCustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/logs/LogDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/parts/CreatePartDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/parts/EditPartDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/parts/PartCreateCarDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/parts/PartDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/sales/CreateFinalSaleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/sales/CreateSaleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/sales/CreateSaleDtoViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/sales/CreateSaleReviewDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/sales/LazySaleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/sales/SaleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/sales/SalesByCustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/suppliers/CreateSupplierDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/suppliers/EditSupplierDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/suppliers/SupplierDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/suppliers/SupplierDtoForCreatingPart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/users/LoginUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/users/RegisterUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/users/RoleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/dtos/users/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/entities/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/entities/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/entities/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/entities/Part.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/entities/Sale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/entities/Supplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/interceptors/LoggerInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/interceptors/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/interceptors/LogoutInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/interceptors/PreAuthenticateInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/interceptors/RegisterInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/repositories/CarRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/repositories/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/repositories/LoggerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/repositories/PartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/repositories/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/repositories/SaleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/repositories/SupplierRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/CarServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/LoggerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/LoggerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/PartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/PartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/SaleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/SaleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/SupplierService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/SupplierServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/softuni/services/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/javascript/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/javascript/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar-guest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/navbar-user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/cars/add-with-parts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/cars/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/cars/by-make.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/cars/car-with-parts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/cars/makes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/customers/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/customers/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/customers/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/customers/sales.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/logs/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/parts/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/parts/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/parts/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/parts/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/sales/add-review.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/sales/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/sales/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/sales/details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/suppliers/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/suppliers/by-importer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/suppliers/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/suppliers/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/users/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/views/users/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/ChushkaAplicationBlock/app/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/ChushkaAplicationBlock/app/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/ChushkaAplicationBlock/app/app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/ChushkaAplicationBlock/javache/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/JavaEEBlock/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exams/JavaEEBlock/exam.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/.idea/artifacts/ROOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/TubesWebServlets.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/TubesHtmlConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/models/Tube.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/repositories/TubeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/servlets/HomeTubeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/servlets/TubeCreateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/java/tubes/servlets/TubeDetailsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/TubesWebServlets/src/main/resources/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/artifacts/ROOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/libraries/javache.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/libraries/soletapi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/libraries/summer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/app/app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/broccolina/.idea/libraries/javache.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/broccolina/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/javache/.idea/libraries/soletapi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/javache/.idea/libraries/summer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/javache/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/summer/.idea/libraries/javache.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/summer/.idea/libraries/soletapi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/summer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/toyote/.idea/libraries/javache.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Java Web Development Basics/Exercises/ExamPreparartion/toyote/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/dataSources/eab92b3d-a59b-4382-abbc-9f78ca1ee7eb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/dataSources/eab92b3d-a59b-4382-abbc-9f78ca1ee7eb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Project/SearchAnimals/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -307,102 +49,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="all.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/logs/all.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="4" column="89" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/parts/add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggerController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/controllers/LoggerController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/services/LoggerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggerServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/services/LoggerServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-              <folding>
-                <element signature="e#1387#1388#0" expanded="true" />
-                <element signature="e#1406#1407#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logs" pinned="false" current-in-tab="false">
-        <entry file="das://015ebdb1-11bd-4119-9445-265903d367b5/schema/cardb/table/logs">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggerInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/interceptors/LoggerInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandlerInterceptorAdapter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE.jar!/org/springframework/web/servlet/handler/HandlerInterceptorAdapter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="21" column="136" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="136" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -501,9 +148,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="1378" />
-    <option name="height" value="744" />
+    <option name="x" value="1" />
+    <option name="y" value="1" />
+    <option name="width" value="1364" />
+    <option name="height" value="726" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -564,6 +212,36 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="comparators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -585,6 +263,28 @@
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="softuni" type="462c0819:PsiDirectoryNode" />
               <item name="dtos" type="462c0819:PsiDirectoryNode" />
+              <item name="cars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="dtos" type="462c0819:PsiDirectoryNode" />
+              <item name="customers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="dtos" type="462c0819:PsiDirectoryNode" />
               <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -595,7 +295,71 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="dtos" type="462c0819:PsiDirectoryNode" />
+              <item name="parts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="dtos" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="dtos" type="462c0819:PsiDirectoryNode" />
+              <item name="suppliers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="dtos" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
               <item name="interceptors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="softuni" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
@@ -637,6 +401,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -665,7 +438,71 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="cars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="customers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="parts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="sales" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="suppliers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="car-dealer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="car-dealer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -805,15 +642,15 @@
       <workItem from="1530822271408" duration="11709000" />
       <workItem from="1531662300925" duration="19691000" />
       <workItem from="1531953949962" duration="14027000" />
-      <workItem from="1532023833034" duration="29957000" />
+      <workItem from="1532023833034" duration="32266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75384000" />
+    <option name="totallyTimeSpent" value="77693000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
+    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -823,7 +660,7 @@
       <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" sideWeight="0.498366" visible="true" weight="0.19954476" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.498366" visible="true" weight="0.20168711" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -834,12 +671,12 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38562092" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39730638" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32843137" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.30555555" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962063" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25230062" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -1088,13 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://015ebdb1-11bd-4119-9445-265903d367b5/schema/cardb/table/cars">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://015ebdb1-11bd-4119-9445-265903d367b5/schema/cardb/table/parts">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1304,47 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/015ebdb1-11bd-4119-9445-265903d367b5/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="1786" column="47" lean-forward="true" selection-start-line="1783" selection-start-column="4" selection-end-line="1786" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/parts/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/logs/all.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="4" column="89" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/controllers/LoggerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.7.RELEASE/spring-webmvc-5.0.7.RELEASE.jar!/org/springframework/web/servlet/handler/HandlerInterceptorAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1378,12 +1167,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/services/LoggerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="87">
           <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
           <folding>
             <element signature="e#1387#1388#0" expanded="true" />
             <element signature="e#1406#1407#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/softuni/controllers/LoggerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/parts/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/views/logs/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="4" column="89" selection-start-line="4" selection-start-column="89" selection-end-line="4" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://015ebdb1-11bd-4119-9445-265903d367b5/schema/cardb/table/cars">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/015ebdb1-11bd-4119-9445-265903d367b5/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="1786" column="47" lean-forward="true" selection-start-line="1783" selection-start-column="4" selection-end-line="1786" selection-end-column="47" />
         </state>
       </provider>
     </entry>
