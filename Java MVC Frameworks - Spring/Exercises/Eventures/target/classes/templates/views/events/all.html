@@ -1,0 +1,35 @@
+<div xmlns:th="http://www.thymeleaf.org">
+    <h1 class="text-center font-weight-bold">All Events</h1>
+    <hr class="bg-eventures hr-bold"/>
+    <table class="table">
+        <thead>
+        <tr>
+            <th class="w-5">#</th>
+            <th class="w-40">Name</th>
+            <th class="w-15">Start</th>
+            <th class="w-15">End</th>
+            <th class="w-25">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="event, iter : ${viewModel}" th:object="${event}">
+            <tr>
+                <th class="w-5" th:text="${iter.index + 1}"></th>
+                <td class="w-40" th:text="*{name}"></td>
+                <td class="w-15" th:text="*{#temporals.format(startDateTime, 'dd/MMM/yyyy - HH:mm')}"></td>
+                <td class="w-15" th:text="*{#temporals.format(endDateTime, 'dd/MMM/yyyy - HH:mm')}"></td>
+                <td class="w-25 tickets">
+                    <form class="form-inline" th:method="POST" th:action="@{/events/order}">
+                        <div class="form-group">
+                            <label for="ticketsCount">Tickets</label>
+                            <input type="number" class="form-control w-50 mx-auto" id="ticketsCount" name="ticketsCount">
+                            <input type="hidden" name="eventId" th:value="*{id}">
+                        </div>
+                        <button type="submit" class="btn bg-eventures">Order</button>
+                    </form>
+                </td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>

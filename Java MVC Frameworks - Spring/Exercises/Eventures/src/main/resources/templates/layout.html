@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title th:text="${title}"></title>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <th:block sec:authorize="isAnonymous()">
+        <th:block th:include="~{fragments/navbar-guest}"/>
+    </th:block>
+    <th:block sec:authorize="${#authorization.expression('isAuthenticated()') and #authorization.expression('hasAuthority(''USER'')')}">
+        <th:block th:include="~{fragments/navbar-user}"/>
+    </th:block>
+    <th:block sec:authorize="${#authorization.expression('isAuthenticated()') and #authorization.expression('hasAuthority(''ADMIN'')')}">
+        <th:block th:include="~{fragments/navbar-admin}"/>
+    </th:block>
+</header>
+<main class="mt-3">
+    <th:block th:include="~{${viewName}}"/>
+</main>
+<footer>
+    <div class="bg-eventures d-flex justify-content-center p-1 text-secondary mt-5">
+        &copy;CopyRight Eventures Inc. 2018-2018. All Rights Reserved.
+    </div>
+</footer>
+</body>
+</html>

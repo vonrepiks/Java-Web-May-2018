@@ -1,0 +1,41 @@
+.bg-eventures {
+    background-color: #AFEEEE;
+}
+
+.hr-bold {
+    border-top-width: 3px;
+}
+
+.w-5 {
+    width: 5%;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-55 {
+    width: 55%;
+}
+
+.logout, .logout:focus, .logout:active {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.tickets {
+    min-width: 350px;
+}

@@ -1,0 +1,44 @@
+<div xmlns:th="http://www.thymeleaf.org">
+    <h1 class="text-center font-weight-bold">Create Event</h1>
+    <hr class="bg-eventures hr-bold"/>
+    <form class="mx-auto w-40" th:method="post" th:action="@{/events/create}">
+        <div class="d-flex justify-content-between">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name"
+                       placeholder="Name...">
+            </div>
+            <div class="form-group">
+                <label for="place">Place</label>
+                <input type="text" class="form-control" id="place" name="place"
+                       placeholder="Place...">
+            </div>
+        </div>
+        <hr class="bg-eventures hr-bold"/>
+        <div class="d-flex justify-content-between">
+            <div class="form-group">
+                <label for="startDateTime">Start</label>
+                <input type="datetime-local" class="form-control" id="startDateTime" name="startDateTime">
+            </div>
+            <div class="form-group">
+                <label for="endDateTime">End</label>
+                <input type="datetime-local" class="form-control" id="endDateTime" name="endDateTime">
+            </div>
+        </div>
+        <hr class="bg-eventures hr-bold"/>
+        <div class="d-flex justify-content-between">
+            <div class="form-group">
+                <label for="totalTickets">Total tickets</label>
+                <input type="number" class="form-control" id="totalTickets" name="totalTickets">
+            </div>
+            <div class="form-group">
+                <label for="pricePerTicket">Price per ticket</label>
+                <input type="number" class="form-control" id="pricePerTicket" name="pricePerTicket">
+            </div>
+        </div>
+        <hr class="bg-eventures hr-bold"/>
+        <div class="text-center mt-3">
+            <button type="submit" class="btn bg-eventures">Create Event</button>
+        </div>
+    </form>
+</div>

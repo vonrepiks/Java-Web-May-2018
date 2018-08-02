@@ -1,0 +1,24 @@
+<div xmlns:th="http://www.thymeleaf.org">
+    <h1 class="text-center font-weight-bold">All Orders</h1>
+    <hr class="bg-eventures hr-bold"/>
+    <table class="table">
+        <thead>
+        <tr>
+            <th class="w-5">#</th>
+            <th class="w-55">Event</th>
+            <th class="w-15">Customer</th>
+            <th class="w-25">Ordered On</th>
+        </tr>
+        </thead>
+        <tbody>
+        <th:block th:each="order, iter : ${viewModel}" th:object="${order}">
+            <tr>
+                <th class="w-5" th:text="${iter.index + 1}"></th>
+                <td class="w-55" th:text="*{eventName}">Name</td>
+                <td class="w-15" th:text="*{getFullName()}"></td>
+                <td class="w-25" th:text="*{#temporals.format(orderedOn, 'dd/MMM/yyyy - HH:mm')}"></td>
+            </tr>
+        </th:block>
+        </tbody>
+    </table>
+</div>

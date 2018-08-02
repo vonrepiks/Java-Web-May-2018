@@ -1,0 +1,18 @@
+<div class="jumbotron text-center bg-eventures mt-3"
+     xmlns:th="http://www.thymeleaf.org"
+     xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <th:block sec:authorize="${#authorization.expression('isAuthenticated()') and #authorization.expression('hasAuthority(''USER'')')}">
+        <h1 th:text="|Welcome, ${#authentication.getPrincipal().getFirstName()}|"></h1>
+        <hr class="hr-bold bg-dark"/>
+        <h3 class="text-secondary">
+            Eventures wishes you an exciting experience.
+        </h3>
+    </th:block>
+    <th:block sec:authorize="${#authorization.expression('isAuthenticated()') and #authorization.expression('hasAuthority(''ADMIN'')')}">
+        <h1 th:text="${'Greetings, Administrator - ' + #authentication.getPrincipal().getFirstName()}"></h1>
+        <hr class="hr-bold bg-dark"/>
+        <h3 class="text-secondary">
+            Enjoy your work.
+        </h3>
+    </th:block>
+</div>

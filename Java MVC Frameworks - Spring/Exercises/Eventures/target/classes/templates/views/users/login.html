@@ -1,0 +1,27 @@
+<div xmlns:th="http://www.thymeleaf.org">
+    <h1 class="text-center font-weight-bold">Login</h1>
+    <hr class="bg-eventures hr-bold"/>
+    <form class="mx-auto w-40" th:method="post" th:action="@{/users/login}">
+        <div class="form-group">
+            <label for="username">Username or email</label>
+            <input type="text" class="form-control" id="username" name="username"
+                   placeholder="Enter username or email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password"
+                   placeholder="Enter password">
+        </div>
+        <hr class="bg-eventures hr-bold"/>
+        <div class="form-check text-center">
+            <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+            <label class="form-check-label" for="rememberMe">
+                Remember Me
+            </label>
+        </div>
+        <hr class="bg-eventures hr-bold"/>
+        <div class="text-center mt-3">
+            <button type="submit" class="btn bg-eventures">Login</button>
+        </div>
+    </form>
+</div>
